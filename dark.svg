@@ -1,472 +1,722 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" width="1180" height="620" preserveAspectRatio="xMidYMid meet">
-  <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 578" width="1180" height="578">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#020817"/><stop offset="100%" stop-color="#030b18"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1a2e" stop-opacity=".97"/><stop offset="100%" stop-color="#080f1c" stop-opacity=".93"/></linearGradient>
+  <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#a78bfa"><animate attributeName="stop-color" values="#a78bfa;#38bdf8;#34d399;#a78bfa" dur="9s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#22d3ee"><animate attributeName="stop-color" values="#22d3ee;#34d399;#a78bfa;#22d3ee" dur="9s" repeatCount="indefinite"/></stop>
+  </linearGradient>
+  <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#7c3aed" stop-opacity=".65"><animate attributeName="stop-color" values="#7c3aed;#22d3ee;#10b981;#7c3aed" dur="5s" repeatCount="indefinite"/></stop>
+    <stop offset="50%"  stop-color="rgba(255,255,255,.06)"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity=".65"><animate attributeName="stop-color" values="#22d3ee;#10b981;#7c3aed;#22d3ee" dur="5s" repeatCount="indefinite"/></stop>
+  </linearGradient>
+  <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#7c3aed"><animate attributeName="stop-color" values="#7c3aed;#22d3ee;#10b981;#7c3aed" dur="8s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#10b981"><animate attributeName="stop-color" values="#10b981;#7c3aed;#22d3ee;#10b981" dur="8s" repeatCount="indefinite"/></stop>
+  </linearGradient>
+  <linearGradient id="glassTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity=".065"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <radialGradient id="orbA" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed" stop-opacity=".32"/><stop offset="100%" stop-color="#020817" stop-opacity="0"/></radialGradient>
+  <radialGradient id="orbB" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#22d3ee" stop-opacity=".22"/><stop offset="100%" stop-color="#020817" stop-opacity="0"/></radialGradient>
+  <radialGradient id="orbC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#10b981" stop-opacity=".18"/><stop offset="100%" stop-color="#020817" stop-opacity="0"/></radialGradient>
+  <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/><stop offset="50%" stop-color="#22d3ee" stop-opacity=".08"/><stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="rgba(148,163,184,.05)"/></pattern>
 
-    <!-- ── Backgrounds ── -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#030712"/>
-      <stop offset="40%"  stop-color="#06080f"/>
-      <stop offset="100%" stop-color="#030712"/>
-    </linearGradient>
-    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0d1526" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#080e1c" stop-opacity="0.85"/>
-    </linearGradient>
+  <!-- Heatmap clipPath reveal -->
+  <clipPath id="hmReveal">
+    <rect x="108" y="184" width="0" height="148">
+      <animate attributeName="width" values="0;800" dur="2s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+  </clipPath>
 
-    <!-- ── Accent gradient ── -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="50%"  stop-color="#22D3EE"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#10B981"><animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="8s" repeatCount="indefinite"/></stop>
-    </linearGradient>
+  <!-- Typing clips -->
+  <clipPath id="t1"><rect x="100" y="84" height="22" width="0"><animate attributeName="width" values="0;0;248;248;0;0" keyTimes="0;.02;.20;.24;.26;1" dur="14s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="t2"><rect x="100" y="84" height="22" width="0"><animate attributeName="width" values="0;0;292;292;0;0" keyTimes="0;.27;.45;.49;.51;1" dur="14s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="t3"><rect x="100" y="84" height="22" width="0"><animate attributeName="width" values="0;0;250;250;0;0" keyTimes="0;.52;.70;.74;.76;1" dur="14s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="t4"><rect x="100" y="84" height="22" width="0"><animate attributeName="width" values="0;0;175;175;0;0" keyTimes="0;.77;.95;.99;1;1" dur="14s" repeatCount="indefinite"/></rect></clipPath>
 
-    <!-- Name gradient -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#a78bfa"><animate attributeName="stop-color" values="#a78bfa;#38bdf8;#34d399;#a78bfa" dur="10s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#38bdf8"><animate attributeName="stop-color" values="#38bdf8;#34d399;#a78bfa;#38bdf8" dur="10s" repeatCount="indefinite"/></stop>
-    </linearGradient>
+  <filter id="glw"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="drop"><feDropShadow dx="0" dy="8" stdDeviation="22" flood-color="#000" flood-opacity=".6"/></filter>
+  <filter id="pg"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="cellGlow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 
-    <!-- Border shimmer -->
-    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.7"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="5s" repeatCount="indefinite"/></stop>
-      <stop offset="50%"  stop-color="rgba(255,255,255,0.07)"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.7"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="5s" repeatCount="indefinite"/></stop>
-    </linearGradient>
+  <style>
+    .pill { cursor:pointer; }
+    .pill rect { transition:all .25s; }
+    .pill:hover rect { fill:rgba(34,211,238,.18)!important; stroke:#22d3ee!important; }
+    .pill:hover text { fill:#fff!important; }
+    .soc  { cursor:pointer; }
+    .soc rect  { transition:all .25s; }
+    .soc:hover rect { fill:rgba(34,211,238,.10)!important; stroke:#22d3ee!important; }
+    .soc:hover text { fill:#22d3ee!important; }
+  </style>
+</defs>
 
-    <!-- Glass -->
-    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.07"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
+<!-- ── BASE ── -->
+<rect width="1180" height="578" rx="20" fill="url(#bg)"/>
+<rect width="1180" height="578" rx="20" fill="url(#dots)"/>
 
-    <!-- Graph card gradient -->
-    <linearGradient id="graphCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0f1f3d" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#07101f" stop-opacity="0.90"/>
-    </linearGradient>
+<!-- ── ORBS ── -->
+<g filter="url(#glw)">
+  <circle cx="180"  cy="200" r="300" fill="url(#orbB)"><animateTransform attributeName="transform" type="translate" values="0,0;40,20;-20,35;0,0" dur="15s" repeatCount="indefinite"/></circle>
+  <circle cx="1050" cy="160" r="280" fill="url(#orbA)"><animateTransform attributeName="transform" type="translate" values="0,0;-35,-20;20,-35;0,0" dur="18s" repeatCount="indefinite"/></circle>
+  <circle cx="680"  cy="500" r="240" fill="url(#orbC)"><animateTransform attributeName="transform" type="translate" values="0,0;20,-20;-25,10;0,0" dur="13s" repeatCount="indefinite"/></circle>
+</g>
 
-    <!-- Graph line gradient -->
-    <linearGradient id="graphLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#7C3AED"/>
-      <stop offset="50%"  stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#10B981"/>
-    </linearGradient>
+<!-- ── PARTICLES ── -->
+<circle cx="88"   cy="120" r="1.5" fill="#22d3ee" opacity=".35"><animate attributeName="cy" values="120;65;120"   dur="7s"  repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.6;.15" dur="7s" repeatCount="indefinite"/></circle>
+<circle cx="1120" cy="360" r="1.5" fill="#10b981" opacity=".3" ><animate attributeName="cy" values="360;310;360"  dur="11s" repeatCount="indefinite"/></circle>
+<circle cx="960"  cy="70"  r="2"   fill="#a78bfa" opacity=".4" ><animate attributeName="cy" values="70;30;70"     dur="8s"  repeatCount="indefinite"/></circle>
+<circle cx="330"  cy="490" r="1"   fill="#22d3ee" opacity=".3" ><animate attributeName="cy" values="490;440;490" dur="9s"  repeatCount="indefinite"/></circle>
+<circle cx="620"  cy="540" r="1.5" fill="#f472b6" opacity=".3" ><animate attributeName="cy" values="540;500;540" dur="6s"  repeatCount="indefinite"/></circle>
 
-    <!-- Graph fill gradient (under line) -->
-    <linearGradient id="graphFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-    </linearGradient>
+<!-- ── OUTER BORDER ── -->
+<rect x="7" y="7" width="1166" height="564" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1.5" opacity=".9"/>
 
-    <!-- Orb gradients -->
-    <radialGradient id="orbA" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="orbB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="orbC" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#10B981" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
+<!-- ── MAIN PANEL ── -->
+<rect x="28" y="26" width="1124" height="528" rx="16" fill="url(#panel)" filter="url(#drop)"/>
+<rect x="28" y="26" width="1124" height="100" rx="16" fill="url(#glassTop)"/>
+<rect x="28" y="26" width="1124" height="528" rx="16" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
 
-    <!-- Scanline -->
-    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#22D3EE" stop-opacity="0.09"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-    </linearGradient>
+<!-- ── TERMINAL BAR ── -->
+<rect x="28" y="26" width="1124" height="38" rx="16" fill="rgba(6,12,26,.9)"/>
+<line x1="28" y1="64" x2="1152" y2="64" stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+<circle cx="56"  cy="45" r="6" fill="#ff5f56"/>
+<circle cx="78"  cy="45" r="6" fill="#ffbd2e"/>
+<circle cx="100" cy="45" r="6" fill="#27c93f"/>
+<rect x="462" y="33" width="256" height="22" rx="6" fill="rgba(255,255,255,.045)"/>
+<text x="590" y="48" font-family="'Fira Code',monospace" font-size="10.5" fill="#475569" text-anchor="middle">mudit@bhopal — github profile</text>
 
-    <!-- Dot pattern -->
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="rgba(148,163,184,0.055)"/>
-    </pattern>
+<!-- ── SCANLINE ── -->
+<rect x="28" y="64" width="1124" height="28" fill="url(#scanGrad)"><animate attributeName="y" values="64;548;64" dur="5s" repeatCount="indefinite"/></rect>
 
-    <!-- Filters -->
-    <filter id="glow"     x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="10" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="drop"     x="-5%"  y="-5%"  width="110%" height="110%">
-      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#000" flood-opacity="0.6"/>
-    </filter>
-    <filter id="pillGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="lineGlow" x="-10%" y="-30%" width="120%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+<!-- ════════════════════════════════════
+     SECTION 1 — NAME + SUBTITLE
+════════════════════════════════════ -->
 
-    <!-- Typing animation clips -->
-    <clipPath id="t1"><rect x="560" y="134" height="26" width="0">
-      <animate attributeName="width" values="0;0;260;260;0;0" keyTimes="0;0.02;0.20;0.24;0.26;1" dur="14s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="t2"><rect x="560" y="134" height="26" width="0">
-      <animate attributeName="width" values="0;0;305;305;0;0" keyTimes="0;0.27;0.45;0.49;0.51;1" dur="14s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="t3"><rect x="560" y="134" height="26" width="0">
-      <animate attributeName="width" values="0;0;260;260;0;0" keyTimes="0;0.52;0.70;0.74;0.76;1" dur="14s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="t4"><rect x="560" y="134" height="26" width="0">
-      <animate attributeName="width" values="0;0;185;185;0;0" keyTimes="0;0.77;0.95;0.99;1;1" dur="14s" repeatCount="indefinite"/>
-    </rect></clipPath>
+<!-- Typing subtitle -->
+<text x="82" y="100" font-family="'Fira Code',monospace" font-size="14" font-weight="700" fill="#22d3ee">▶</text>
+<g clip-path="url(#t1)"><text x="100" y="100" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#e2e8f0">Competitive Programmer</text></g>
+<g clip-path="url(#t2)"><text x="100" y="100" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#22d3ee">Machine Learning Enthusiast</text></g>
+<g clip-path="url(#t3)"><text x="100" y="100" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#10b981">Data Science Enthusiast</text></g>
+<g clip-path="url(#t4)"><text x="100" y="100" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#a78bfa">Python Developer</text></g>
+<rect x="100" y="84" width="9" height="18" fill="#22d3ee" rx="1">
+  <animate attributeName="opacity" values="1;0;1" dur=".75s" repeatCount="indefinite"/>
+  <animate attributeName="x" values="100;100;243;243;100;100;295;295;100;100;245;245;100;100;170;170;100" keyTimes="0;.02;.20;.24;.27;.27;.45;.49;.52;.52;.70;.74;.77;.77;.95;.99;1" dur="14s" repeatCount="indefinite"/>
+</rect>
 
-    <!-- Graph animation: draw the polyline via strokeDashoffset -->
-    <!-- The polyline path length is approximately 500 -->
+<!-- Big name -->
+<text x="82" y="142" font-family="'Inter',system-ui,sans-serif" font-size="46" font-weight="900" fill="#f1f5f9" letter-spacing="-.5">Hi 👋  I'm <tspan fill="url(#nameGrad)">Mudit Agrawal</tspan></text>
 
-    <style>
-      .pill { cursor: pointer; }
-      .pill rect { transition: all .3s ease; }
-      .pill:hover rect { fill: rgba(34,211,238,0.15) !important; stroke: #22D3EE !important; }
-      .pill:hover text { fill: #ffffff !important; }
-      .soc { cursor: pointer; }
-      .soc rect { transition: all .3s ease; }
-      .soc:hover rect { fill: rgba(34,211,238,0.10) !important; stroke: #22D3EE !important; }
-      .soc:hover text { fill: #22D3EE !important; }
-    </style>
-  </defs>
-
-  <!-- ══ BASE ══ -->
-  <rect width="1180" height="620" rx="22" fill="url(#bgGrad)"/>
-  <rect width="1180" height="620" rx="22" fill="url(#dots)"/>
-
-  <!-- ══ AMBIENT GLOW ORBS ══ -->
-  <g filter="url(#glow)">
-    <circle cx="160"  cy="220" r="300" fill="url(#orbB)">
-      <animateTransform attributeName="transform" type="translate" values="0,0;40,25;-20,40;0,0" dur="15s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1020" cy="160" r="280" fill="url(#orbA)">
-      <animateTransform attributeName="transform" type="translate" values="0,0;-35,-20;25,-35;0,0" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="700"  cy="520" r="260" fill="url(#orbC)">
-      <animateTransform attributeName="transform" type="translate" values="0,0;20,-25;-30,10;0,0" dur="12s" repeatCount="indefinite"/>
-    </circle>
+<!-- Info pills row -->
+<g transform="translate(82,158)" opacity="0"><animate attributeName="opacity" values="0;1" dur=".7s" begin=".25s" fill="freeze"/>
+  <!-- Location -->
+  <circle cx="9"  cy="9" r="5.5" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+  <circle cx="9"  cy="9" r="2" fill="#22d3ee"/>
+  <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Bhopal, MP, India</text>
+  <line x1="152" y1="1" x2="152" y2="17" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <!-- College -->
+  <g transform="translate(162,0)">
+    <path d="M0 9L7 5L14 9L7 13Z M2.5 11L2.5 16 Q7 18 11.5 16 L11.5 11 L7 13Z" fill="none" stroke="#7c3aed" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="20" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">B.Tech IT — <tspan fill="#94a3b8">IIIT Bhopal</tspan></text>
   </g>
-
-  <!-- ══ FLOATING PARTICLES ══ -->
-  <g fill="#22D3EE">
-    <circle cx="90"   cy="140" r="1.5" opacity="0.4"><animate attributeName="cy" values="140;80;140"   dur="7s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.7;0.2" dur="7s"  repeatCount="indefinite"/></circle>
-    <circle cx="340"  cy="500" r="1"   opacity="0.3"><animate attributeName="cy" values="500;440;500"  dur="9s"  repeatCount="indefinite"/></circle>
-    <circle cx="950"  cy="80"  r="2"   fill="#a78bfa" opacity="0.4"><animate attributeName="cy" values="80;30;80" dur="8s" repeatCount="indefinite"/></circle>
-    <circle cx="1100" cy="370" r="1.5" fill="#10B981" opacity="0.3"><animate attributeName="cy" values="370;320;370" dur="11s" repeatCount="indefinite"/></circle>
-    <circle cx="590"  cy="560" r="1"   opacity="0.3"><animate attributeName="cy" values="560;510;560"  dur="6s"  repeatCount="indefinite"/></circle>
-    <circle cx="770"  cy="60"  r="1.5" fill="#f472b6" opacity="0.35"><animate attributeName="cy" values="60;20;60" dur="10s" repeatCount="indefinite"/></circle>
+  <line x1="380" y1="1" x2="380" y2="17" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <!-- Email -->
+  <g transform="translate(390,0)">
+    <rect x="0" y="3" width="16" height="12" rx="2" fill="none" stroke="#10b981" stroke-width="1.4"/>
+    <path d="M0 6L8 11L16 6" fill="none" stroke="#10b981" stroke-width="1.3"/>
+    <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">muditagrawal06@gmail.com</text>
   </g>
+</g>
 
-  <!-- ══ CANVAS BORDER ══ -->
-  <rect x="8" y="8" width="1164" height="604" rx="20" fill="none" stroke="url(#shimmer)" stroke-width="1.5" opacity="0.9"/>
+<!-- Divider 1 -->
+<line x1="80" y1="186" x2="1100" y2="186" stroke="url(#accentLine)" stroke-width="1" opacity=".3"/>
 
-  <!-- ══ MAIN PANEL ══ -->
-  <rect x="30" y="30" width="1120" height="560" rx="18" fill="url(#panelGrad)" filter="url(#drop)"/>
-  <rect x="30" y="30" width="1120" height="110" rx="18" fill="url(#glassReflect)"/>
-  <rect x="30" y="30" width="1120" height="560" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
+<!-- ════════════════════════════════════
+     SECTION 2 — GITHUB HEATMAP
+════════════════════════════════════ -->
 
-  <!-- ══ TERMINAL HEADER BAR ══ -->
-  <rect x="30" y="30" width="1120" height="40" rx="18" fill="rgba(10,15,28,0.85)"/>
-  <line x1="30" y1="70" x2="1150" y2="70" stroke="rgba(255,255,255,0.055)" stroke-width="1"/>
-  <circle cx="58"  cy="50" r="6" fill="#FF5F56"/>
-  <circle cx="80"  cy="50" r="6" fill="#FFBD2E"/>
-  <circle cx="102" cy="50" r="6" fill="#27C93F"/>
-  <rect x="460" y="38" width="260" height="22" rx="6" fill="rgba(255,255,255,0.05)"/>
-  <text x="590" y="53" font-family="'Fira Code',monospace" font-size="10.5" fill="#64748B" text-anchor="middle">mudit@bhopal — zsh — 1180×620</text>
-  <text x="1090" y="55" font-family="'Fira Code',monospace" font-size="11" fill="#334155" text-anchor="middle">⊞ ⊟ ✕</text>
+<!-- Section label + stats -->
+<text x="80" y="204" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="2">// GITHUB CONTRIBUTIONS</text>
+<text x="900" y="204" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#475569">847 contributions this year</text>
+<text x="1090" y="204" font-family="'Fira Code',monospace" font-size="10.5" fill="#f97316" text-anchor="end">🔥 21d streak</text>
 
-  <!-- ══ SCANLINE ══ -->
-  <rect x="30" y="70" width="1120" height="28" fill="url(#scanGrad)" opacity="1">
-    <animate attributeName="y" values="70;582;70" dur="5s" repeatCount="indefinite"/>
-  </rect>
+<!-- Month labels -->
+<g font-family="'Fira Code',monospace" font-size="9" fill="#4b5563">
+  <text x="120" y="218">Jan</text><text x="180" y="218">Feb</text><text x="255" y="218">Mar</text>
+  <text x="315" y="218">Apr</text><text x="375" y="218">May</text><text x="450" y="218">Jun</text>
+  <text x="510" y="218">Jul</text><text x="585" y="218">Aug</text><text x="645" y="218">Sep</text>
+  <text x="720" y="218">Oct</text><text x="780" y="218">Nov</text><text x="840" y="218">Dec</text>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════
-       TOP LEFT: GREETING + NAME + TYPING
-  ═══════════════════════════════════════════════════════ -->
-  <text x="80" y="106" font-family="'Fira Code',monospace" font-size="13" font-weight="500" fill="#22D3EE" letter-spacing="3">// HELLO WORLD</text>
+<!-- Day labels -->
+<g font-family="'Fira Code',monospace" font-size="9" fill="#4b5563">
+  <text x="108" y="235" text-anchor="end">Mon</text>
+  <text x="108" y="265" text-anchor="end">Wed</text>
+  <text x="108" y="295" text-anchor="end">Fri</text>
+</g>
 
-  <!-- Typing subtitle — placed left, before name -->
-  <text x="537" y="132" font-family="'Fira Code',monospace" font-size="15" font-weight="700" fill="#22D3EE">▶</text>
-  <g clip-path="url(#t1)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#E2E8F0">Competitive Programmer</text></g>
-  <g clip-path="url(#t2)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#22D3EE">Machine Learning Enthusiast</text></g>
-  <g clip-path="url(#t3)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#10B981">Data Science Enthusiast</text></g>
-  <g clip-path="url(#t4)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#a78bfa">Python Developer</text></g>
-  <!-- Cursor -->
-  <rect x="560" y="138" width="9" height="18" fill="#22D3EE" rx="1">
-    <animate attributeName="opacity" values="1;0;1" dur="0.75s" repeatCount="indefinite"/>
-    <animate attributeName="x"
-      values="560;560;238;238;560;560;308;308;560;560;273;273;560;560;203;203;560"
-      keyTimes="0;0.02;0.20;0.24;0.27;0.27;0.45;0.49;0.52;0.52;0.70;0.74;0.77;0.77;0.95;0.99;1"
-      dur="14s" repeatCount="indefinite"/>
-  </rect>
+<!-- ── HEATMAP GRID (52 weeks × 7 days) ── -->
+<g clip-path="url(#hmReveal)">
 
-  <!-- Big name -->
-  <text x="80" y="175" font-family="'Inter',system-ui,sans-serif" font-size="50" font-weight="900" fill="#F1F5F9" letter-spacing="-1">Hi 👋  I'm <tspan fill="url(#nameGrad)">Mudit Agrawal</tspan></text>
+<!-- W0 x=120 "0112100" -->
+<rect x="120" y="222" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="120" y="237" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="120" y="252" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="120" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="120" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="120" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="120" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ═══════════════════════════════════════════════════════
-       TOP RIGHT: LIVE RATING GRAPH CARD
-  ═══════════════════════════════════════════════════════ -->
+<!-- W1 x=135 "1223100" -->
+<rect x="135" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="135" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="135" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="135" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="135" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="135" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="135" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Graph Card container -->
-  <rect x="660" y="78" width="450" height="115" rx="14" fill="url(#graphCardGrad)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
-  <!-- Glass inner highlight -->
-  <rect x="660" y="78" width="450" height="40" rx="14" fill="rgba(255,255,255,0.035)"/>
+<!-- W2 x=150 "2332110" -->
+<rect x="150" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="150" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="150" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="150" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="150" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="150" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="150" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Card header -->
-  <text x="678" y="98" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#22D3EE" letter-spacing="1.5">// RATING TREND</text>
+<!-- W3 x=165 "3442210" -->
+<rect x="165" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="165" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="165" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="165" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="165" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="165" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="165" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Platform labels -->
-  <rect x="810" y="84" width="84" height="18" rx="4" fill="rgba(234,179,8,0.15)" stroke="rgba(234,179,8,0.35)" stroke-width="1"/>
-  <text x="852" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#EAB308" text-anchor="middle">LeetCode</text>
+<!-- W4 x=180 "2332100" -->
+<rect x="180" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="180" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="180" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="180" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="180" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="180" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="180" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <rect x="902" y="84" width="96" height="18" rx="4" fill="rgba(30,144,255,0.15)" stroke="rgba(30,144,255,0.35)" stroke-width="1"/>
-  <text x="950" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#60a5fa" text-anchor="middle">Codeforces</text>
+<!-- W5 x=195 "3443210" -->
+<rect x="195" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="195" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="195" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="195" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="195" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="195" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="195" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <rect x="1006" y="84" width="90" height="18" rx="4" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.35)" stroke-width="1"/>
-  <text x="1051" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#10B981" text-anchor="middle">Codolio</text>
+<!-- W6 x=210 "4434321" contest -->
+<rect x="210" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="210" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="210" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="210" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="210" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="210" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="210" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-  <!-- Graph area: x from 672 to 1098, y from 105 to 175 -->
-  <!-- Grid lines (horizontal) -->
-  <g stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="3,4">
-    <line x1="672" y1="110" x2="1098" y2="110"/>
-    <line x1="672" y1="127" x2="1098" y2="127"/>
-    <line x1="672" y1="144" x2="1098" y2="144"/>
-    <line x1="672" y1="161" x2="1098" y2="161"/>
-    <line x1="672" y1="178" x2="1098" y2="178"/>
-  </g>
+<!-- W7 x=225 "3323210" -->
+<rect x="225" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="225" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="225" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="225" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="225" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="225" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="225" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Y-axis labels -->
-  <text x="668" y="113" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">2000</text>
-  <text x="668" y="130" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1800</text>
-  <text x="668" y="147" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1600</text>
-  <text x="668" y="164" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1400</text>
-  <text x="668" y="181" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1200</text>
+<!-- W8 x=240 "2232100" -->
+<rect x="240" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="240" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="240" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="240" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="240" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="240" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="240" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- LeetCode rating line (orange-yellow) — simulated upward trend -->
-  <!-- Points: realistic CP rating journey, upward trend with fluctuations -->
-  <polyline
-    points="672,178 702,175 730,171 758,174 785,168 810,162 836,165 860,157 882,150 904,153 924,146 944,138 962,141 980,133 1000,128 1018,122 1038,118 1058,115 1078,112 1098,110"
-    fill="none"
-    stroke="#EAB308"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-dasharray="520"
-    stroke-dashoffset="520"
-    filter="url(#lineGlow)"
-    opacity="0.9">
-    <animate attributeName="stroke-dashoffset" values="520;0" dur="2.5s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-  </polyline>
+<!-- W9 x=255 "1122100" -->
+<rect x="255" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="255" y="237" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="255" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="255" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="255" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="255" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="255" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Fill area under LeetCode line -->
-  <polygon
-    points="672,178 702,175 730,171 758,174 785,168 810,162 836,165 860,157 882,150 904,153 924,146 944,138 962,141 980,133 1000,128 1018,122 1038,118 1058,115 1078,112 1098,110 1098,182 672,182"
-    fill="url(#graphFillGrad)"
-    opacity="0">
-    <animate attributeName="opacity" values="0;0.18" dur="1s" begin="2.5s" fill="freeze"/>
-  </polygon>
+<!-- W10 x=270 "2233210" -->
+<rect x="270" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="270" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="270" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="270" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="270" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="270" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="270" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Codeforces rating line (blue) — slightly lower, also trending up -->
-  <polyline
-    points="672,182 702,180 730,176 758,179 785,173 810,168 836,172 860,164 882,158 904,161 924,155 944,150 962,152 980,145 1000,141 1018,136 1038,132 1058,129 1078,126 1098,122"
-    fill="none"
-    stroke="#60a5fa"
-    stroke-width="1.8"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-dasharray="520"
-    stroke-dashoffset="520"
-    opacity="0.75">
-    <animate attributeName="stroke-dashoffset" values="520;0" dur="2.5s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-  </polyline>
+<!-- W11 x=285 "3344321" contest -->
+<rect x="285" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="285" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="285" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="285" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="285" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="285" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="285" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-  <!-- Data points (LeetCode) — glowing dots -->
-  <g fill="#EAB308" opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3s" fill="freeze"/>
-    <circle cx="702"  cy="175" r="2.5"/>
-    <circle cx="758"  cy="174" r="2.5"/>
-    <circle cx="836"  cy="165" r="2.5"/>
-    <circle cx="904"  cy="153" r="2.5"/>
-    <circle cx="962"  cy="141" r="2.5"/>
-    <circle cx="1018" cy="122" r="2.5"/>
-    <circle cx="1078" cy="112" r="2.5"/>
-    <!-- Endpoint glow -->
-    <circle cx="1098" cy="110" r="4.5" opacity="0.5"/>
-    <circle cx="1098" cy="110" r="2.5"/>
-  </g>
+<!-- W12 x=300 "3334210" -->
+<rect x="300" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="300" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="300" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="300" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="300" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="300" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="300" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- Current rating badge -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="3.2s" fill="freeze"/>
-    <rect x="1060" y="96" width="82" height="22" rx="5" fill="rgba(234,179,8,0.25)" stroke="rgba(234,179,8,0.6)" stroke-width="1"/>
-    <text x="1101" y="111" font-family="'Inter',system-ui,sans-serif" font-size="11" font-weight="800" fill="#FDE047" text-anchor="middle">★ 1800+</text>
-  </g>
+<!-- W13 x=315 "2323210" -->
+<rect x="315" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="315" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="315" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="315" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="315" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="315" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="315" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- X axis labels (contest months) -->
-  <g font-family="'Fira Code',monospace" font-size="7.5" fill="#1e293b" text-anchor="middle">
-    <text x="702"  y="192">Jan</text>
-    <text x="785"  y="192">Mar</text>
-    <text x="860"  y="192">May</text>
-    <text x="944"  y="192">Jul</text>
-    <text x="1018" y="192">Sep</text>
-    <text x="1098" y="192">Now</text>
-  </g>
+<!-- W14 x=330 "1122100" -->
+<rect x="330" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="330" y="237" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="330" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="330" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="330" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="330" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="330" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ══ MAIN DIVIDER ══ -->
-  <line x1="80" y1="200" x2="1100" y2="200" stroke="url(#accentGrad)" stroke-width="1" opacity="0.35"/>
+<!-- W15 x=345 "0011000" exam rest -->
+<rect x="345" y="222" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="345" y="237" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="345" y="252" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="345" y="267" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="345" y="282" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="345" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="345" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ═══════════════════════════════════════════════════════
-       INFO ROW
-  ═══════════════════════════════════════════════════════ -->
-  <g transform="translate(80,218)" opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.2s" fill="freeze"/>
+<!-- W16 x=360 "1222100" -->
+<rect x="360" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="360" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="360" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="360" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="360" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="360" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="360" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <!-- Location -->
-    <g transform="translate(0,0)">
-      <circle cx="9" cy="9" r="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
-      <circle cx="9" cy="9" r="2.5" fill="#22D3EE"/>
-      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">Bhopal, MP, India</text>
-    </g>
-    <line x1="150" y1="2" x2="150" y2="18" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+<!-- W17 x=375 "2333210" -->
+<rect x="375" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="375" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="375" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="375" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="375" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="375" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="375" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <!-- College -->
-    <g transform="translate(163,0)">
-      <path d="M0 10 L8 5 L16 10 L8 15 Z M3 12 L3 18 Q8 20 13 18 L13 12 L8 15 Z" fill="none" stroke="#7C3AED" stroke-width="1.4" stroke-linejoin="round"/>
-      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">B.Tech IT — <tspan fill="#94A3B8">IIIT Bhopal</tspan></text>
-    </g>
-    <line x1="382" y1="2" x2="382" y2="18" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+<!-- W18 x=390 "4444321" CONTEST -->
+<rect x="390" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="390" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="390" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="390" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="390" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="390" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="390" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-    <!-- Email -->
-    <g transform="translate(396,0)">
-      <rect x="0" y="3" width="16" height="12" rx="2" fill="none" stroke="#10B981" stroke-width="1.4"/>
-      <path d="M0 6 L8 11 L16 6" fill="none" stroke="#10B981" stroke-width="1.3"/>
-      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">muditagrawal06@gmail.com</text>
-    </g>
-  </g>
+<!-- W19 x=405 "3333210" -->
+<rect x="405" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="405" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="405" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="405" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="405" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="405" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="405" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ══ DIVIDER ══ -->
-  <line x1="80" y1="256" x2="1100" y2="256" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<!-- W20 x=420 "2232100" -->
+<rect x="420" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="420" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="420" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="420" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="420" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="420" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="420" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ═══════════════════════════════════════════════════════
-       SKILLS
-  ═══════════════════════════════════════════════════════ -->
-  <text x="80" y="284" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
+<!-- W21 x=435 "3443321" -->
+<rect x="435" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="435" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="435" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="435" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="435" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="435" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="435" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-  <!-- ── ROW 1 ── -->
-  <g transform="translate(80,297)">
-    <g class="pill" transform="translate(0,0)">   <rect width="146" height="30" rx="15" fill="rgba(124,58,237,0.12)"  stroke="rgba(124,58,237,0.4)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#7C3AED"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Machine Learning</text></g>
-    <g class="pill" transform="translate(154,0)">  <rect width="80"  height="30" rx="15" fill="rgba(34,211,238,0.10)"  stroke="rgba(34,211,238,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#22D3EE"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Python</text></g>
-    <g class="pill" transform="translate(242,0)">  <rect width="64"  height="30" rx="15" fill="rgba(16,185,129,0.10)"  stroke="rgba(16,185,129,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#10B981"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">C++</text></g>
-    <g class="pill" transform="translate(314,0)">  <rect width="226" height="30" rx="15" fill="rgba(245,158,11,0.10)"  stroke="rgba(245,158,11,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F59E0B"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Structures &amp; Algorithms</text></g>
-    <g class="pill" transform="translate(548,0)">  <rect width="186" height="30" rx="15" fill="rgba(236,72,153,0.10)"  stroke="rgba(236,72,153,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EC4899"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Competitive Programming</text></g>
-    <g class="pill" transform="translate(742,0)">  <rect width="136" height="30" rx="15" fill="rgba(59,130,246,0.10)"  stroke="rgba(59,130,246,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#3B82F6"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Problem Solving</text></g>
-    <g class="pill" transform="translate(886,0)">  <rect width="110" height="30" rx="15" fill="rgba(16,185,129,0.10)"  stroke="rgba(16,185,129,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#10B981"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Science</text></g>
-  </g>
+<!-- W22 x=450 "4444332" -->
+<rect x="450" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="450" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="450" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="450" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="450" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="450" y="297" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="450" y="312" width="12" height="12" rx="2" fill="#006d32"/>
 
-  <!-- ── ROW 2 ── -->
-  <g transform="translate(80,335)">
-    <g class="pill" transform="translate(0,0)">   <rect width="100" height="30" rx="15" fill="rgba(249,115,22,0.10)"  stroke="rgba(249,115,22,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F97316"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Scikit-learn</text></g>
-    <g class="pill" transform="translate(108,0)">  <rect width="80"  height="30" rx="15" fill="rgba(139,92,246,0.10)"  stroke="rgba(139,92,246,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#8B5CF6"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Pandas</text></g>
-    <g class="pill" transform="translate(196,0)">  <rect width="78"  height="30" rx="15" fill="rgba(6,182,212,0.10)"   stroke="rgba(6,182,212,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#06B6D4"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">NumPy</text></g>
-    <g class="pill" transform="translate(282,0)">  <rect width="140" height="30" rx="15" fill="rgba(234,179,8,0.10)"   stroke="rgba(234,179,8,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EAB308"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Visualization</text></g>
-    <g class="pill" transform="translate(430,0)">  <rect width="66"  height="30" rx="15" fill="rgba(236,72,153,0.10)"  stroke="rgba(236,72,153,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EC4899"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">EDA</text></g>
-    <g class="pill" transform="translate(504,0)">  <rect width="110" height="30" rx="15" fill="rgba(244,63,94,0.10)"   stroke="rgba(244,63,94,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F43F5E"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Git &amp; GitHub</text></g>
-    <g class="pill" transform="translate(622,0)">  <rect width="90"  height="30" rx="15" fill="rgba(255,75,75,0.10)"   stroke="rgba(255,75,75,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#FF4B4B"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Streamlit</text></g>
-    <g class="pill" transform="translate(720,0)">  <rect width="66"  height="30" rx="15" fill="rgba(99,102,241,0.10)"  stroke="rgba(99,102,241,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#6366F1"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">OOP</text></g>
-    <g class="pill" transform="translate(794,0)" filter="url(#pillGlow)"><rect width="110" height="30" rx="15" fill="rgba(124,58,237,0.22)" stroke="rgba(124,58,237,0.7)" stroke-width="1.2"/><circle cx="15" cy="15" r="4" fill="#a78bfa"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">Antigravity</text></g>
-  </g>
+<!-- W23 x=465 "3443221" -->
+<rect x="465" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="465" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="465" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="465" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="465" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="465" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="465" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-  <!-- ══ DIVIDER ══ -->
-  <line x1="80" y1="380" x2="1100" y2="380" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+<!-- W24 x=480 "4444432" STREAK -->
+<rect x="480" y="222" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="480" y="237" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="480" y="252" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="480" y="267" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="480" y="282" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="480" y="297" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="480" y="312" width="12" height="12" rx="2" fill="#006d32"/>
 
-  <!-- ═══════════════════════════════════════════════════════
-       STATS CARDS
-  ═══════════════════════════════════════════════════════ -->
-  <g transform="translate(80,396)" opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.6s" fill="freeze"/>
+<!-- W25 x=495 "4433321" -->
+<rect x="495" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="495" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="495" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="495" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="495" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="495" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="495" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-    <g transform="translate(0,0)">
-      <rect width="248" height="78" rx="12" fill="rgba(124,58,237,0.10)" stroke="rgba(124,58,237,0.28)" stroke-width="1"/>
-      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#7C3AED" letter-spacing="1">COMPETITIVE PROG.</text>
-      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">LeetCode</text>
-      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Codeforces · GeeksforGeeks</text>
-    </g>
+<!-- W26 x=510 "2322100" -->
+<rect x="510" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="510" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="510" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="510" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="510" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="510" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="510" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <g transform="translate(264,0)">
-      <rect width="248" height="78" rx="12" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.22)" stroke-width="1"/>
-      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#22D3EE" letter-spacing="1">DATA SCIENCE</text>
-      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Scikit · Pandas</text>
-      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">NumPy · Matplotlib · Seaborn</text>
-    </g>
+<!-- W27 x=525 "0011000" rest -->
+<rect x="525" y="222" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="525" y="237" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="525" y="252" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="525" y="267" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="525" y="282" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="525" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="525" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <g transform="translate(528,0)">
-      <rect width="248" height="78" rx="12" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.22)" stroke-width="1"/>
-      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#10B981" letter-spacing="1">DEVELOPMENT</text>
-      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Python · C++</text>
-      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Streamlit · Git · OOP</text>
-    </g>
+<!-- W28 x=540 "1222100" -->
+<rect x="540" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="540" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="540" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="540" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="540" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="540" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="540" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <g transform="translate(792,0)" filter="url(#pillGlow)">
-      <rect width="248" height="78" rx="12" fill="rgba(167,139,250,0.10)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
-      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#a78bfa" letter-spacing="1">AI TOOLING</text>
-      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Antigravity</text>
-      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Agentic AI · Google DeepMind</text>
-    </g>
-  </g>
+<!-- W29 x=555 "2333210" -->
+<rect x="555" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="555" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="555" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="555" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="555" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="555" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="555" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ══ DIVIDER ══ -->
-  <line x1="80" y1="490" x2="1100" y2="490" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+<!-- W30 x=570 "3434321" contest -->
+<rect x="570" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="570" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="570" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="570" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="570" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="570" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="570" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-  <!-- ═══════════════════════════════════════════════════════
-       SOCIAL BUTTONS
-  ═══════════════════════════════════════════════════════ -->
-  <text x="80" y="512" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#475569" letter-spacing="2">// CONNECT WITH ME</text>
+<!-- W31 x=585 "3333210" -->
+<rect x="585" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="585" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="585" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="585" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="585" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="585" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="585" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <g transform="translate(80,522)">
+<!-- W32 x=600 "2232100" -->
+<rect x="600" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="600" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="600" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="600" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="600" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="600" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="600" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <!-- GitHub -->
-    <a href="https://github.com/mudit-1711" target="_blank">
-      <g class="soc">
-        <rect width="196" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
-        <path d="M14 8C8.48 8 4 12.48 4 18c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0114 10.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.02 10.02 0 0024 18c0-5.52-4.48-10-10-10z" fill="#F8FAFC" transform="translate(10,10) scale(0.73)"/>
-        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">GitHub</text>
-        <text x="97" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-1711</text>
-      </g>
-    </a>
+<!-- W33 x=615 "3343210" -->
+<rect x="615" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="615" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="615" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="615" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="615" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="615" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="615" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/mudit-agrawal17" target="_blank">
-      <g class="soc" transform="translate(210,0)">
-        <rect width="220" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
-        <rect x="10" y="11" width="20" height="20" rx="4" fill="#0A66C2" opacity="0.9"/>
-        <text x="10" y="26" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle" transform="translate(10,0)">in</text>
-        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">LinkedIn</text>
-        <text x="103" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-agrawal17</text>
-      </g>
-    </a>
+<!-- W34 x=630 "4444321" CONTEST -->
+<rect x="630" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="630" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="630" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="630" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="630" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="630" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="630" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
 
-    <!-- Codolio -->
-    <a href="https://codolio.com/profile/mudit_1711" target="_blank">
-      <g class="soc" transform="translate(444,0)">
-        <rect width="210" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,11) scale(0.83)"/>
-        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">Codolio</text>
-        <text x="98" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit_1711</text>
-      </g>
-    </a>
+<!-- W35 x=645 "3333210" -->
+<rect x="645" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="645" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="645" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="645" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="645" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="645" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="645" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-    <!-- Email -->
-    <a href="mailto:muditagrawal06@gmail.com" target="_blank">
-      <g class="soc" transform="translate(668,0)">
-        <rect width="254" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
-        <rect x="10" y="13" width="20" height="14" rx="2" fill="none" stroke="#EA4335" stroke-width="1.7"/>
-        <path d="M10 16 L20 22 L30 16" fill="none" stroke="#EA4335" stroke-width="1.6"/>
-        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">Email</text>
-        <text x="78" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">muditagrawal06@gmail.com</text>
-      </g>
-    </a>
-  </g>
+<!-- W36 x=660 "2232100" -->
+<rect x="660" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="660" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="660" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="660" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="660" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="660" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="660" y="312" width="12" height="12" rx="2" fill="#161b22"/>
 
-  <!-- ══ SIGNATURE ══ -->
-  <text x="1100" y="578" font-family="'Fira Code',monospace" font-size="10" fill="#1e293b" text-anchor="end">made with ❤️ by Mudit Agrawal · IIIT Bhopal</text>
+<!-- W37 x=675 "0011000" rest -->
+<rect x="675" y="222" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="675" y="237" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="675" y="252" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="675" y="267" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="675" y="282" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="675" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="675" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W38 x=690 "2233210" -->
+<rect x="690" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="690" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="690" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="690" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="690" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="690" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="690" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W39 x=705 "3443321" -->
+<rect x="705" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="705" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="705" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="705" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="705" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="705" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="705" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
+
+<!-- W40 x=720 "4444432" CRUNCH -->
+<rect x="720" y="222" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="720" y="237" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="720" y="252" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="720" y="267" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="720" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="720" y="297" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="720" y="312" width="12" height="12" rx="2" fill="#006d32"/>
+
+<!-- W41 x=735 "4334321" -->
+<rect x="735" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="735" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="735" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="735" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="735" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="735" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="735" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
+
+<!-- W42 x=750 "3333210" -->
+<rect x="750" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="750" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="750" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="750" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="750" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="750" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="750" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W43 x=765 "2232100" -->
+<rect x="765" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="765" y="237" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="765" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="765" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="765" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="765" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="765" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W44 x=780 "3343210" -->
+<rect x="780" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="780" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="780" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="780" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="780" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="780" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="780" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W45 x=795 "4444332" semester project -->
+<rect x="795" y="222" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="795" y="237" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="795" y="252" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="795" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="795" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="795" y="297" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="795" y="312" width="12" height="12" rx="2" fill="#006d32"/>
+
+<!-- W46 x=810 "3333210" -->
+<rect x="810" y="222" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="810" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="810" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="810" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="810" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="810" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="810" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W47 x=825 "1122100" -->
+<rect x="825" y="222" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="825" y="237" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="825" y="252" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="825" y="267" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="825" y="282" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="825" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="825" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W48 x=840 "0011000" -->
+<rect x="840" y="222" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="840" y="237" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="840" y="252" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="840" y="267" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="840" y="282" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="840" y="297" width="12" height="12" rx="2" fill="#161b22"/>
+<rect x="840" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W49 x=855 "2333210" -->
+<rect x="855" y="222" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="855" y="237" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="855" y="252" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="855" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="855" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="855" y="297" width="12" height="12" rx="2" fill="#0e4429"/>
+<rect x="855" y="312" width="12" height="12" rx="2" fill="#161b22"/>
+
+<!-- W50 x=870 "4444332" end-of-year push -->
+<rect x="870" y="222" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="870" y="237" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="870" y="252" width="12" height="12" rx="2" fill="#39d353" filter="url(#pg)"/>
+<rect x="870" y="267" width="12" height="12" rx="2" fill="#39d353"/>
+<rect x="870" y="282" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="870" y="297" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="870" y="312" width="12" height="12" rx="2" fill="#006d32"/>
+
+<!-- W51 x=885 "3333221" latest -->
+<rect x="885" y="222" width="12" height="12" rx="2" fill="#26a641" filter="url(#pg)"/>
+<rect x="885" y="237" width="12" height="12" rx="2" fill="#26a641" filter="url(#pg)"/>
+<rect x="885" y="252" width="12" height="12" rx="2" fill="#26a641" filter="url(#pg)"/>
+<rect x="885" y="267" width="12" height="12" rx="2" fill="#26a641"/>
+<rect x="885" y="282" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="885" y="297" width="12" height="12" rx="2" fill="#006d32"/>
+<rect x="885" y="312" width="12" height="12" rx="2" fill="#0e4429"/>
+
+</g><!-- end clip -->
+
+<!-- Legend -->
+<g transform="translate(82,334)">
+  <text x="0" y="10" font-family="'Fira Code',monospace" font-size="9" fill="#4b5563">Less</text>
+  <rect x="28" y="0" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="43" y="0" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="58" y="0" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="73" y="0" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="88" y="0" width="11" height="11" rx="2" fill="#39d353"/>
+  <text x="105" y="10" font-family="'Fira Code',monospace" font-size="9" fill="#4b5563">More</text>
+</g>
+
+<!-- Divider 2 -->
+<line x1="80" y1="354" x2="1100" y2="354" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+
+<!-- ════════════════════════════════════
+     SECTION 3 — SKILLS
+════════════════════════════════════ -->
+<text x="80" y="374" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
+
+<!-- Row 1 -->
+<g transform="translate(80,383)">
+  <g class="pill"><rect x="0"   y="0" width="146" height="28" rx="14" fill="rgba(124,58,237,.12)" stroke="rgba(124,58,237,.4)" stroke-width="1"/><circle cx="14" cy="14" r="3.5" fill="#7c3aed"/><text x="24" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Machine Learning</text></g>
+  <g class="pill"><rect x="153" y="0" width="76"  height="28" rx="14" fill="rgba(34,211,238,.10)" stroke="rgba(34,211,238,.35)" stroke-width="1"/><circle cx="167" cy="14" r="3.5" fill="#22d3ee"/><text x="177" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Python</text></g>
+  <g class="pill"><rect x="236" y="0" width="60"  height="28" rx="14" fill="rgba(16,185,129,.10)" stroke="rgba(16,185,129,.35)" stroke-width="1"/><circle cx="250" cy="14" r="3.5" fill="#10b981"/><text x="260" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">C++</text></g>
+  <g class="pill"><rect x="303" y="0" width="226" height="28" rx="14" fill="rgba(245,158,11,.10)" stroke="rgba(245,158,11,.35)" stroke-width="1"/><circle cx="317" cy="14" r="3.5" fill="#f59e0b"/><text x="327" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Structures &amp; Algorithms</text></g>
+  <g class="pill"><rect x="536" y="0" width="186" height="28" rx="14" fill="rgba(236,72,153,.10)" stroke="rgba(236,72,153,.35)" stroke-width="1"/><circle cx="550" cy="14" r="3.5" fill="#ec4899"/><text x="560" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Competitive Programming</text></g>
+  <g class="pill"><rect x="729" y="0" width="108" height="28" rx="14" fill="rgba(59,130,246,.10)" stroke="rgba(59,130,246,.35)" stroke-width="1"/><circle cx="743" cy="14" r="3.5" fill="#3b82f6"/><text x="753" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Science</text></g>
+  <g class="pill"><rect x="844" y="0" width="130" height="28" rx="14" fill="rgba(16,185,129,.10)" stroke="rgba(16,185,129,.35)" stroke-width="1"/><circle cx="858" cy="14" r="3.5" fill="#10b981"/><text x="868" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Problem Solving</text></g>
+</g>
+
+<!-- Row 2 -->
+<g transform="translate(80,419)">
+  <g class="pill"><rect x="0"   y="0" width="99"  height="28" rx="14" fill="rgba(249,115,22,.10)" stroke="rgba(249,115,22,.35)" stroke-width="1"/><circle cx="14" cy="14" r="3.5" fill="#f97316"/><text x="24" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Scikit-learn</text></g>
+  <g class="pill"><rect x="106" y="0" width="76"  height="28" rx="14" fill="rgba(139,92,246,.10)" stroke="rgba(139,92,246,.35)" stroke-width="1"/><circle cx="120" cy="14" r="3.5" fill="#8b5cf6"/><text x="130" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Pandas</text></g>
+  <g class="pill"><rect x="189" y="0" width="74"  height="28" rx="14" fill="rgba(6,182,212,.10)"  stroke="rgba(6,182,212,.35)"  stroke-width="1"/><circle cx="203" cy="14" r="3.5" fill="#06b6d4"/><text x="213" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">NumPy</text></g>
+  <g class="pill"><rect x="270" y="0" width="138" height="28" rx="14" fill="rgba(234,179,8,.10)"  stroke="rgba(234,179,8,.35)"  stroke-width="1"/><circle cx="284" cy="14" r="3.5" fill="#eab308"/><text x="294" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Visualization</text></g>
+  <g class="pill"><rect x="415" y="0" width="62"  height="28" rx="14" fill="rgba(236,72,153,.10)" stroke="rgba(236,72,153,.35)" stroke-width="1"/><circle cx="429" cy="14" r="3.5" fill="#ec4899"/><text x="439" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">EDA</text></g>
+  <g class="pill"><rect x="484" y="0" width="108" height="28" rx="14" fill="rgba(244,63,94,.10)"  stroke="rgba(244,63,94,.35)"  stroke-width="1"/><circle cx="498" cy="14" r="3.5" fill="#f43f5e"/><text x="508" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Git &amp; GitHub</text></g>
+  <g class="pill"><rect x="599" y="0" width="86"  height="28" rx="14" fill="rgba(255,75,75,.10)"  stroke="rgba(255,75,75,.35)"  stroke-width="1"/><circle cx="613" cy="14" r="3.5" fill="#ff4b4b"/><text x="623" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Streamlit</text></g>
+  <g class="pill"><rect x="692" y="0" width="62"  height="28" rx="14" fill="rgba(99,102,241,.10)" stroke="rgba(99,102,241,.35)" stroke-width="1"/><circle cx="706" cy="14" r="3.5" fill="#6366f1"/><text x="716" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">OOP</text></g>
+  <g class="pill" filter="url(#pg)"><rect x="761" y="0" width="108" height="28" rx="14" fill="rgba(124,58,237,.22)" stroke="rgba(167,139,250,.7)" stroke-width="1.2"/><circle cx="775" cy="14" r="3.5" fill="#a78bfa"/><text x="785" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="700" fill="#c4b5fd">Antigravity</text></g>
+</g>
+
+<!-- Divider 3 -->
+<line x1="80" y1="460" x2="1100" y2="460" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+
+<!-- ════════════════════════════════════
+     SECTION 4 — SOCIAL
+════════════════════════════════════ -->
+<text x="80" y="480" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#475569" letter-spacing="2">// CONNECT WITH ME</text>
+
+<g transform="translate(80,490)">
+  <!-- GitHub -->
+  <a href="https://github.com/mudit-1711" target="_blank"><g class="soc">
+    <rect width="190" height="38" rx="9" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)" stroke-width="1"/>
+    <path d="M14 8C8.48 8 4 12.48 4 18c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24 0-.87 0-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0114 10.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34 0 2.42 0 2.75 0 .27.18.58.69.48A10.02 10.02 0 0024 18c0-5.52-4.48-10-10-10z" fill="#f1f5f9" transform="translate(10,9) scale(.72)"/>
+    <text x="38" y="24" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">GitHub</text>
+    <text x="95" y="24" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-1711</text>
+  </g></a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/mudit-agrawal17" target="_blank"><g class="soc" transform="translate(203,0)">
+    <rect width="216" height="38" rx="9" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)" stroke-width="1"/>
+    <rect x="10" y="10" width="18" height="18" rx="3.5" fill="#0a66c2"/>
+    <text x="19" y="24" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="900" fill="#fff" text-anchor="middle">in</text>
+    <text x="38" y="24" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">LinkedIn</text>
+    <text x="100" y="24" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-agrawal17</text>
+  </g></a>
+
+  <!-- Codolio -->
+  <a href="https://codolio.com/profile/mudit_1711" target="_blank"><g class="soc" transform="translate(432,0)">
+    <rect width="204" height="38" rx="9" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)" stroke-width="1"/>
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#22d3ee" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,10) scale(.82)"/>
+    <text x="38" y="24" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Codolio</text>
+    <text x="96" y="24" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit_1711</text>
+  </g></a>
+
+  <!-- Email -->
+  <a href="mailto:muditagrawal06@gmail.com" target="_blank"><g class="soc" transform="translate(649,0)">
+    <rect width="252" height="38" rx="9" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)" stroke-width="1"/>
+    <rect x="10" y="12" width="18" height="14" rx="2" fill="none" stroke="#ea4335" stroke-width="1.5"/>
+    <path d="M10 15L19 21L28 15" fill="none" stroke="#ea4335" stroke-width="1.4"/>
+    <text x="38" y="24" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Email</text>
+    <text x="76" y="24" font-family="'Fira Code',monospace" font-size="10" fill="#475569">muditagrawal06@gmail.com</text>
+  </g></a>
+</g>
+
+<!-- Footer -->
+<text x="1100" y="548" font-family="'Fira Code',monospace" font-size="9.5" fill="#1e293b" text-anchor="end">crafted with ❤️ · Mudit Agrawal · IIIT Bhopal</text>
 
 </svg>
