@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 520" width="1180" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 430" width="1180" height="430">
 <defs>
   <!-- Backgrounds -->
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -138,12 +138,12 @@
 </circle>
 
 <!-- ── OUTER BORDER ── -->
-<rect x="6" y="6" width="1168" height="508" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1.5"/>
+<rect x="6" y="6" width="1168" height="418" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1.5"/>
 
 <!-- ── MAIN PANEL ── -->
-<rect x="26" y="24" width="1128" height="474" rx="16" fill="url(#panel)" filter="url(#drop)"/>
+<rect x="26" y="24" width="1128" height="384" rx="16" fill="url(#panel)" filter="url(#drop)"/>
 <rect x="26" y="24" width="1128" height="90"  rx="16" fill="url(#glassTop)"/>
-<rect x="26" y="24" width="1128" height="474" rx="16" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
+<rect x="26" y="24" width="1128" height="384" rx="16" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
 
 <!-- ── TERMINAL HEADER ── -->
 <rect x="26" y="24" width="1128" height="38" rx="16" fill="rgba(5,10,20,.9)"/>
@@ -157,15 +157,14 @@
 
 <!-- ── SCANLINE ── -->
 <rect x="26" y="62" width="1128" height="26" fill="url(#scan)">
-  <animate attributeName="y" values="62;492;62" dur="4.5s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="62;402;62" dur="4.5s" repeatCount="indefinite"/>
 </rect>
 
 <!-- ══════════════════════════════════════════
      SECTION 1 — NAME & TYPING
 ══════════════════════════════════════════ -->
 
-<!-- small label -->
-<text x="80" y="88" font-family="'Fira Code',monospace" font-size="11" fill="#22d3ee" letter-spacing="3" opacity=".7">// HELLO WORLD</text>
+
 
 <!-- Typing line -->
 <text x="82" y="102" font-family="'Fira Code',monospace" font-size="14" font-weight="700" fill="#22d3ee">▶</text>
@@ -213,70 +212,12 @@
 <line x1="80" y1="196" x2="1100" y2="196" stroke="url(#divGrad)" stroke-width="1"/>
 
 <!-- ══════════════════════════════════════════
-     SECTION 2 — STAT CARDS
+     SECTION 2 — SKILLS
 ══════════════════════════════════════════ -->
-
-<g transform="translate(80,210)" opacity="0">
-  <animate attributeName="opacity" values="0;1" dur=".8s" begin=".3s" fill="freeze"/>
-
-  <!-- Card 1: Competitive Programming -->
-  <g class="card" transform="translate(0,0)">
-    <rect width="258" height="82" rx="14" fill="url(#sc1)" stroke="rgba(124,58,237,.35)" stroke-width="1"/>
-    <!-- top accent bar -->
-    <rect width="258" height="3" rx="1" fill="#7c3aed" y="0" opacity=".8"/>
-    <!-- Icon area -->
-    <text x="18" y="32" font-size="22">🏆</text>
-    <text x="52" y="30" font-family="'Fira Code',monospace" font-size="9.5" fill="#7c3aed" letter-spacing="1" font-weight="700">COMPETITIVE PROG.</text>
-    <text x="52" y="50" font-family="'Inter',system-ui,sans-serif" font-size="20" font-weight="800" fill="#f1f5f9">LeetCode</text>
-    <text x="52" y="68" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748b">Codeforces · GeeksForGeeks</text>
-    <!-- corner glow -->
-    <circle cx="230" cy="20" r="20" fill="#7c3aed" opacity=".08"/>
-  </g>
-
-  <!-- Card 2: Data Science -->
-  <g class="card" transform="translate(274,0)">
-    <rect width="258" height="82" rx="14" fill="url(#sc2)" stroke="rgba(34,211,238,.28)" stroke-width="1"/>
-    <rect width="258" height="3" rx="1" fill="#22d3ee" y="0" opacity=".8"/>
-    <text x="18" y="32" font-size="22">📊</text>
-    <text x="52" y="30" font-family="'Fira Code',monospace" font-size="9.5" fill="#22d3ee" letter-spacing="1" font-weight="700">DATA SCIENCE</text>
-    <text x="52" y="50" font-family="'Inter',system-ui,sans-serif" font-size="20" font-weight="800" fill="#f1f5f9">Pandas · NumPy</text>
-    <text x="52" y="68" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748b">Scikit-learn · Matplotlib</text>
-    <circle cx="230" cy="20" r="20" fill="#22d3ee" opacity=".07"/>
-  </g>
-
-  <!-- Card 3: Development -->
-  <g class="card" transform="translate(548,0)">
-    <rect width="258" height="82" rx="14" fill="url(#sc3)" stroke="rgba(16,185,129,.28)" stroke-width="1"/>
-    <rect width="258" height="3" rx="1" fill="#10b981" y="0" opacity=".8"/>
-    <text x="18" y="32" font-size="22">⚡</text>
-    <text x="52" y="30" font-family="'Fira Code',monospace" font-size="9.5" fill="#10b981" letter-spacing="1" font-weight="700">DEVELOPMENT</text>
-    <text x="52" y="50" font-family="'Inter',system-ui,sans-serif" font-size="20" font-weight="800" fill="#f1f5f9">Python · C++</text>
-    <text x="52" y="68" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748b">Streamlit · Git · OOP</text>
-    <circle cx="230" cy="20" r="20" fill="#10b981" opacity=".06"/>
-  </g>
-
-  <!-- Card 4: AI Tooling -->
-  <g class="card" transform="translate(822,0)" filter="url(#pg)">
-    <rect width="258" height="82" rx="14" fill="url(#sc4)" stroke="rgba(167,139,250,.5)" stroke-width="1"/>
-    <rect width="258" height="3" rx="1" fill="#a78bfa" y="0" opacity=".9"/>
-    <text x="18" y="32" font-size="22">🤖</text>
-    <text x="52" y="30" font-family="'Fira Code',monospace" font-size="9.5" fill="#a78bfa" letter-spacing="1" font-weight="700">AI TOOLING</text>
-    <text x="52" y="50" font-family="'Inter',system-ui,sans-serif" font-size="20" font-weight="800" fill="#f1f5f9">Antigravity</text>
-    <text x="52" y="68" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748b">Agentic AI · Google DeepMind</text>
-    <circle cx="230" cy="20" r="20" fill="#a78bfa" opacity=".1"/>
-  </g>
-</g>
-
-<!-- ── DIVIDER 2 ── -->
-<line x1="80" y1="306" x2="1100" y2="306" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
-
-<!-- ══════════════════════════════════════════
-     SECTION 3 — SKILLS
-══════════════════════════════════════════ -->
-<text x="80" y="326" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
+<text x="80" y="218" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
 
 <!-- Row 1 -->
-<g transform="translate(80,335)">
+<g transform="translate(80,228)">
   <g class="pill"><rect x="0"   y="0" width="146" height="28" rx="14" fill="rgba(124,58,237,.12)" stroke="rgba(124,58,237,.4)"  stroke-width="1"/><circle cx="14" cy="14" r="3.5" fill="#7c3aed"/><text x="24" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Machine Learning</text></g>
   <g class="pill"><rect x="153" y="0" width="76"  height="28" rx="14" fill="rgba(34,211,238,.10)" stroke="rgba(34,211,238,.35)" stroke-width="1"/><circle cx="167" cy="14" r="3.5" fill="#22d3ee"/><text x="177" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Python</text></g>
   <g class="pill"><rect x="236" y="0" width="60"  height="28" rx="14" fill="rgba(16,185,129,.10)" stroke="rgba(16,185,129,.35)" stroke-width="1"/><circle cx="250" cy="14" r="3.5" fill="#10b981"/><text x="260" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">C++</text></g>
@@ -287,7 +228,7 @@
 </g>
 
 <!-- Row 2 -->
-<g transform="translate(80,371)">
+<g transform="translate(80,264)">
   <g class="pill"><rect x="0"   y="0" width="99"  height="28" rx="14" fill="rgba(249,115,22,.10)" stroke="rgba(249,115,22,.35)" stroke-width="1"/><circle cx="14"  cy="14" r="3.5" fill="#f97316"/><text x="24"  y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Scikit-learn</text></g>
   <g class="pill"><rect x="106" y="0" width="76"  height="28" rx="14" fill="rgba(139,92,246,.10)" stroke="rgba(139,92,246,.35)" stroke-width="1"/><circle cx="120" cy="14" r="3.5" fill="#8b5cf6"/><text x="130" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Pandas</text></g>
   <g class="pill"><rect x="189" y="0" width="74"  height="28" rx="14" fill="rgba(6,182,212,.10)"  stroke="rgba(6,182,212,.35)"  stroke-width="1"/><circle cx="203" cy="14" r="3.5" fill="#06b6d4"/><text x="213" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">NumPy</text></g>
@@ -300,15 +241,15 @@
   <g class="pill" filter="url(#pg)"><rect x="760" y="0" width="108" height="28" rx="14" fill="rgba(124,58,237,.22)" stroke="rgba(167,139,250,.75)" stroke-width="1.2"/><circle cx="774" cy="14" r="3.5" fill="#a78bfa"/><text x="784" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="700" fill="#c4b5fd">Antigravity</text></g>
 </g>
 
-<!-- ── DIVIDER 3 ── -->
-<line x1="80" y1="412" x2="1100" y2="412" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+<!-- ── DIVIDER 2 ── -->
+<line x1="80" y1="305" x2="1100" y2="305" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
 
 <!-- ══════════════════════════════════════════
-     SECTION 4 — SOCIAL LINKS
+     SECTION 3 — SOCIAL LINKS
 ══════════════════════════════════════════ -->
-<text x="80" y="432" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#334155" letter-spacing="2">// CONNECT</text>
+<text x="80" y="325" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#334155" letter-spacing="2">// CONNECT</text>
 
-<g transform="translate(80,442)">
+<g transform="translate(80,335)">
 
   <!-- GitHub -->
   <a href="https://github.com/mudit-1711" target="_blank">
@@ -355,6 +296,6 @@
 </g>
 
 <!-- ── FOOTER ── -->
-<text x="1100" y="498" font-family="'Fira Code',monospace" font-size="9.5" fill="#1e293b" text-anchor="end">crafted with ❤️  ·  Mudit Agrawal  ·  IIIT Bhopal</text>
+<text x="1100" y="418" font-family="'Fira Code',monospace" font-size="9.5" fill="#1e293b" text-anchor="end">crafted with ❤️  ·  Mudit Agrawal  ·  IIIT Bhopal</text>
 
 </svg>
