@@ -25,13 +25,13 @@
       </stop>
     </linearGradient>
 
-    <!-- ASCII Animated Gradient -->
+    <!-- ASCII Animated Gradient (Cyan - Purple - Amber Shifter) -->
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE; #a855f7; #ec4899; #22D3EE" dur="8s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#F97316">
+        <animate attributeName="stop-color" values="#F97316; #22D3EE; #a855f7; #F97316" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED; #22D3EE; #10B981; #7C3AED" dur="8s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE; #7C3AED; #F97316; #22D3EE" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
@@ -162,8 +162,8 @@
       }
       .ascii-text {
         font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
-        font-size: 10.5px;
-        letter-spacing: 0.5px;
+        font-size: 10.2px;
+        letter-spacing: 0.4px;
         white-space: pre;
       }
     </style>
@@ -217,7 +217,7 @@
   <!-- Canvas Shimmer Outer Border -->
   <rect x="10" y="10" width="1160" height="590" rx="18" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5" opacity="0.8"/>
 
-  <!-- ================= LEFT SIDE: ASCII CYBER TERMINAL (~38%) ================= -->
+  <!-- ================= LEFT SIDE: ASCII CYBER EMBLEM TERMINAL (~38%) ================= -->
   <g transform="translate(0,0)" style="animation: floatSlow 6s ease-in-out indefinite;">
     <!-- ASCII Card Container -->
     <rect x="35" y="35" width="415" height="540" rx="16" fill="url(#panelGradient)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#softShadow)"/>
@@ -231,42 +231,42 @@
     <circle cx="58" cy="53" r="5.5" fill="#FF5F56"/>
     <circle cx="76" cy="53" r="5.5" fill="#FFBD2E"/>
     <circle cx="94" cy="53" r="5.5" fill="#27C93F"/>
-    <text x="242" y="57" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" text-anchor="middle" opacity="0.8">mudit@bhopal:~/portrait</text>
+    <text x="242" y="57" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" text-anchor="middle" opacity="0.8">mudit@bhopal:~/emblem_art</text>
 
     <!-- Inner Terminal Border Line -->
     <line x1="35" y1="71" x2="450" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
 
-    <!-- ASCII Art Display Block with Reveal Mask -->
+    <!-- ASCII Art Display Block (Modeled after Mudit's MA 17 Photo Emblem) -->
     <g clip-path="url(#asciiReveal)">
       <g fill="url(#asciiGrad)" class="ascii-text">
-        <text x="50" y="93">┌─────────────────────────────────────────┐</text>
-        <text x="50" y="108">│  ░▒▓███████████████████████████████▓▒░  │</text>
-        <text x="50" y="123">│  ██  ___  ___  ______ _____ _____  ██  │</text>
-        <text x="50" y="138">│  ██  |  \/  | / _ \  |_   _|_   _| ██  │</text>
-        <text x="50" y="153">│  ██  | .  . |/ /_\ \   | |   | |   ██  │</text>
-        <text x="50" y="168">│  ██  | |\/| ||  _  |   | |   | |   ██  │</text>
-        <text x="50" y="183">│  ██  | |  | || | | |  _| |_ _| |_  ██  │</text>
-        <text x="50" y="198">│  ██  \_|  |_/\_| |_/  \___/ \___/  ██  │</text>
-        <text x="50" y="213">│  ░▒▓███████████████████████████████▓▒░  │</text>
-        <text x="50" y="228">│                                         │</text>
-        <text x="50" y="243">│  ┌───────────────────────────────────┐  │</text>
-        <text x="50" y="258">│  │ [::] EMBLEM ID: M-AGRAWAL-17 [::] │  │</text>
-        <text x="50" y="273">│  ├───────────────────────────────────┤  │</text>
-        <text x="50" y="288">│  │     .-----------------------.     │  │</text>
-        <text x="50" y="303">│  │    /   __  __    _     17    \    │  │</text>
-        <text x="50" y="318">│  │   |   |  \/  |  / \   /--\    |   │  │</text>
-        <text x="50" y="333">│  │   |   | |\/| | / _ \  |  |    |   │  │</text>
-        <text x="50" y="348">│  │   |   | |  | |/ ___ \ \--/    |   │  │</text>
-        <text x="50" y="363">│  │   \   |_|  |_/_/   \_\        /   │  │</text>
-        <text x="50" y="378">│  │    '-------------------------'    │  │</text>
-        <text x="50" y="393">│  └───────────────────────────────────┘  │</text>
-        <text x="50" y="408">│                                         │</text>
-        <text x="50" y="423">│  > USER: Mudit Agrawal                  │</text>
-        <text x="50" y="438">│  > ROLE: CP | ML | DS | Python          │</text>
-        <text x="50" y="453">│  > CAMPUS: IIIT Bhopal (B.Tech IT)      │</text>
-        <text x="50" y="468">│  > CORE: DSA, C++, Scikit-learn, EDA     │</text>
-        <text x="50" y="483">│  > SYSTEM STATUS: ONLINE [████████]     │</text>
-        <text x="50" y="498">└─────────────────────────────────────────┘</text>
+        <text x="48" y="93">┌─────────────────────────────────────────┐</text>
+        <text x="48" y="108">│ while(learning) { solve_problems(); }   │</text>
+        <text x="48" y="123">│     .------------------------------.    │</text>
+        <text x="48" y="138">│    /    .----------------------.    \   │</text>
+        <text x="48" y="153">│   |    /      &lt; / &gt;  [ 17 ]     \    |  │</text>
+        <text x="48" y="168">│   |   |    ███╗   ███╗ █████╗    |   |  │</text>
+        <text x="48" y="183">│   |   |    ████╗ ████║██╔══██╗   |   |  │</text>
+        <text x="48" y="198">│   |   |    ██╔████╔██║███████║   |   |  │</text>
+        <text x="48" y="213">│   |   |    ██║╚██╔╝██║██╔══██║   |   |  │</text>
+        <text x="48" y="228">│   |   |    ██║ ╚═╝ ██║██║  ██║   |   |  │</text>
+        <text x="48" y="243">│   |   |    ╚═╝     ╚═╝╚═╝  ╚═╝   |   |  │</text>
+        <text x="48" y="258">│   |   |    &lt; \ &gt;             / &gt; |   |  │</text>
+        <text x="48" y="273">│   |   |     M u d i t  A g r a w a l |  │</text>
+        <text x="48" y="288">│   |    \                        /    |  │</text>
+        <text x="48" y="303">│    \    '----------------------'    /   │</text>
+        <text x="48" y="318">│     '------------------------------'    │</text>
+        <text x="48" y="333">│ int code() { return mudit.solve(); }    │</text>
+        <text x="48" y="348">│                                         │</text>
+        <text x="48" y="363">│ ┌─────────────────────────────────────┐ │</text>
+        <text x="48" y="378">│ │ > USER: Mudit Agrawal (IIIT Bhopal) │ │</text>
+        <text x="48" y="393">│ │ > ROLE: CP | ML | DS | Python       │ │</text>
+        <text x="48" y="408">│ │ > CAMPUS: IIIT Bhopal (B.Tech IT)   │ │</text>
+        <text x="48" y="423">│ │ > CORE: DSA, C++, ML, Antigravity   │ │</text>
+        <text x="48" y="438">│ │ > STATUS: ACTIVE [████████████] 100%│ │</text>
+        <text x="48" y="453">│ └─────────────────────────────────────┘ │</text>
+        <text x="48" y="468">│                                         │</text>
+        <text x="48" y="483">│ > system session: ONLINE_READY          │</text>
+        <text x="48" y="498">└─────────────────────────────────────────┘</text>
       </g>
     </g>
 
@@ -281,7 +281,7 @@
     <rect x="54" y="520" width="8" height="14" fill="#22D3EE">
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
     </rect>
-    <text x="68" y="532" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">cyber-term v2.4 initialized</text>
+    <text x="68" y="532" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">mudit-art-engine v3.0 active</text>
   </g>
 
   <!-- ================= RIGHT SIDE: MAIN TERMINAL WINDOW (~62%) ================= -->
@@ -495,11 +495,11 @@
         <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">OOP</text>
       </g>
 
-      <!-- Pill 16: Figma -->
+      <!-- Pill 16: Antigravity -->
       <g class="pill" transform="translate(186, 108)">
-        <rect width="68" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#A855F7"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Figma</text>
+        <rect width="102" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.5" fill="#7C3AED"/>
+        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Antigravity</text>
       </g>
     </g>
 

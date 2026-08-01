@@ -21,15 +21,10 @@
 
 ### 👨‍💻 About Me
 
-```sys-info
-[SYSTEM]: LOGGED IN AS MUDIT AGRAWAL (IIIT BHOPAL)
-[STATUS]: BUILDING MACHINE LEARNING MODELS & SOLVING ALGORITHMIC PUZZLES
-```
-
 - 🎓 **Education**: Pursuing B.Tech in Information Technology at **Indian Institute of Information Technology (IIIT) Bhopal**.
 - 🚀 **Focus Areas**: Machine Learning, Data Science, Data Structures & Algorithms, Competitive Programming.
-- 💡 **Core Strengths**: Analytical Thinking, Algorithmic Optimization, Exploratory Data Analysis, Predictive Modeling.
-- 🎯 **Current Goals**: Advanced ML Architectures, Competitive Programming Rankings, and Open-Source Contributions.
+- 💡 **Core Strengths**: Analytical Problem Solving, Algorithmic Optimization, Exploratory Data Analysis, Predictive Modeling.
+- 🎯 **Current Goals**: Advanced Machine Learning Architectures, Competitive Programming Rankings, and Open-Source Contributions.
 - 💬 **Ask me about**: Python, C++, Machine Learning algorithms, Scikit-learn, and DSA strategies.
 - 📫 **Reach me at**: `muditagrawal06@gmail.com`
 
@@ -56,13 +51,13 @@
   <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
 </p>
 
-#### ⚙️ Developer Tools & Environments
+#### ⚙️ Developer Tools & AI Technologies
 <p align="left">
+  <img src="https://img.shields.io/badge/Antigravity-7C3AED?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
 </p>
 
 ---
@@ -83,7 +78,7 @@
 ### ⚡ Competitive Programming & Problem Solving
 - 🏆 **Codolio Profile**: Track problem statistics across platforms at [codolio.com/profile/mudit_1711](https://codolio.com/profile/mudit_1711)
 - 🧠 Active solver on **LeetCode**, **Codeforces**, and **GeeksforGeeks**.
-- 📈 Continuous focus on **Data Structures**, **Dynamic Programming**, **Graph Theory**, and **Algorithm Design**.
+- 📈 Continuous focus on **Data Structures**, **Dynamic Programming**, **Graph Theory**, and **Algorithm Optimization**.
 
 ---
 
