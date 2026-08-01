@@ -25,13 +25,13 @@
       </stop>
     </linearGradient>
 
-    <!-- ASCII Animated Gradient (Cyan - Purple - Amber Shifter) -->
+    <!-- ASCII Animated Gradient -->
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#F97316">
-        <animate attributeName="stop-color" values="#F97316; #22D3EE; #a855f7; #F97316" dur="8s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE; #a855f7; #ec4899; #22D3EE" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE; #7C3AED; #F97316; #22D3EE" dur="8s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED; #22D3EE; #10B981; #7C3AED" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
@@ -105,28 +105,28 @@
     <!-- Sequential Typing Clips for Terminal Phrases -->
     <!-- Phrase 1: Competitive Programmer -->
     <clipPath id="typeClip1">
-      <rect x="495" y="132" width="0" height="30">
+      <rect x="495" y="128" width="0" height="26">
         <animate attributeName="width" values="0; 0; 245; 245; 0; 0" keyTimes="0; 0.02; 0.18; 0.23; 0.25; 1" dur="12s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <!-- Phrase 2: Machine Learning Enthusiast -->
     <clipPath id="typeClip2">
-      <rect x="495" y="132" width="0" height="30">
+      <rect x="495" y="128" width="0" height="26">
         <animate attributeName="width" values="0; 0; 290; 290; 0; 0" keyTimes="0; 0.27; 0.43; 0.48; 0.50; 1" dur="12s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <!-- Phrase 3: Data Science Enthusiast -->
     <clipPath id="typeClip3">
-      <rect x="495" y="132" width="0" height="30">
+      <rect x="495" y="128" width="0" height="26">
         <animate attributeName="width" values="0; 0; 245; 245; 0; 0" keyTimes="0; 0.52; 0.68; 0.73; 0.75; 1" dur="12s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <!-- Phrase 4: Python Developer -->
     <clipPath id="typeClip4">
-      <rect x="495" y="132" width="0" height="30">
+      <rect x="495" y="128" width="0" height="26">
         <animate attributeName="width" values="0; 0; 180; 180; 0; 0" keyTimes="0; 0.77; 0.93; 0.98; 1; 1" dur="12s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
@@ -217,7 +217,7 @@
   <!-- Canvas Shimmer Outer Border -->
   <rect x="10" y="10" width="1160" height="590" rx="18" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5" opacity="0.8"/>
 
-  <!-- ================= LEFT SIDE: ASCII CYBER EMBLEM TERMINAL (~38%) ================= -->
+  <!-- ================= LEFT SIDE: MUDIT AGRAWAL ASCII PORTRAIT (~38%) ================= -->
   <g transform="translate(0,0)" style="animation: floatSlow 6s ease-in-out indefinite;">
     <!-- ASCII Card Container -->
     <rect x="35" y="35" width="415" height="540" rx="16" fill="url(#panelGradient)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#softShadow)"/>
@@ -231,41 +231,41 @@
     <circle cx="58" cy="53" r="5.5" fill="#FF5F56"/>
     <circle cx="76" cy="53" r="5.5" fill="#FFBD2E"/>
     <circle cx="94" cy="53" r="5.5" fill="#27C93F"/>
-    <text x="242" y="57" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" text-anchor="middle" opacity="0.8">mudit@bhopal:~/emblem_art</text>
+    <text x="242" y="57" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" text-anchor="middle" opacity="0.8">mudit@bhopal:~/mudit_portrait.ascii</text>
 
     <!-- Inner Terminal Border Line -->
     <line x1="35" y1="71" x2="450" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
 
-    <!-- ASCII Art Display Block (Modeled after Mudit's MA 17 Photo Emblem) -->
+    <!-- ASCII Portrait Display Block (Modeled after Mudit's Photo) -->
     <g clip-path="url(#asciiReveal)">
       <g fill="url(#asciiGrad)" class="ascii-text">
         <text x="48" y="93">┌─────────────────────────────────────────┐</text>
-        <text x="48" y="108">│ while(learning) { solve_problems(); }   │</text>
-        <text x="48" y="123">│     .------------------------------.    │</text>
-        <text x="48" y="138">│    /    .----------------------.    \   │</text>
-        <text x="48" y="153">│   |    /      &lt; / &gt;  [ 17 ]     \    |  │</text>
-        <text x="48" y="168">│   |   |    ███╗   ███╗ █████╗    |   |  │</text>
-        <text x="48" y="183">│   |   |    ████╗ ████║██╔══██╗   |   |  │</text>
-        <text x="48" y="198">│   |   |    ██╔████╔██║███████║   |   |  │</text>
-        <text x="48" y="213">│   |   |    ██║╚██╔╝██║██╔══██║   |   |  │</text>
-        <text x="48" y="228">│   |   |    ██║ ╚═╝ ██║██║  ██║   |   |  │</text>
-        <text x="48" y="243">│   |   |    ╚═╝     ╚═╝╚═╝  ╚═╝   |   |  │</text>
-        <text x="48" y="258">│   |   |    &lt; \ &gt;             / &gt; |   |  │</text>
-        <text x="48" y="273">│   |   |     M u d i t  A g r a w a l |  │</text>
-        <text x="48" y="288">│   |    \                        /    |  │</text>
-        <text x="48" y="303">│    \    '----------------------'    /   │</text>
-        <text x="48" y="318">│     '------------------------------'    │</text>
-        <text x="48" y="333">│ int code() { return mudit.solve(); }    │</text>
-        <text x="48" y="348">│                                         │</text>
-        <text x="48" y="363">│ ┌─────────────────────────────────────┐ │</text>
-        <text x="48" y="378">│ │ > USER: Mudit Agrawal (IIIT Bhopal) │ │</text>
-        <text x="48" y="393">│ │ > ROLE: CP | ML | DS | Python       │ │</text>
-        <text x="48" y="408">│ │ > CAMPUS: IIIT Bhopal (B.Tech IT)   │ │</text>
+        <text x="48" y="108">│        .░▒▓██████████████▓▒░.           │</text>
+        <text x="48" y="123">│       ████████████████████████          │</text>
+        <text x="48" y="138">│      ████ ▀▀▀▀▀        ▀▀▀▀▀ ███        │</text>
+        <text x="48" y="153">│     ████ (  ◉   )    (  ◉   ) ███       │</text>
+        <text x="48" y="168">│     ████    ▄▄          ▄▄    ███       │</text>
+        <text x="48" y="183">│     ████       (  ╨  )        ███       │</text>
+        <text x="48" y="198">│     ████       (  ═══  )      ███       │</text>
+        <text x="48" y="213">│      ████     \  ___  /      ███        │</text>
+        <text x="48" y="228">│       █████    '-----'     █████        │</text>
+        <text x="48" y="243">│        '██████.       .██████'          │</text>
+        <text x="48" y="258">│       .---'    '-----'    '---.         │</text>
+        <text x="48" y="273">│      /  .-------------------.  \        │</text>
+        <text x="48" y="288">│     /  /  [MUDIT AGRAWAL]    \  \       │</text>
+        <text x="48" y="303">│    |  |     /========= \      |  |      │</text>
+        <text x="48" y="318">│    |  |    /   CROSSED  \     |  |      │</text>
+        <text x="48" y="333">│    |  |   (===== ARMS ===)    |  |      │</text>
+        <text x="48" y="348">│     \  \   \___________/     /  /       │</text>
+        <text x="48" y="363">│      '--'-------------------'--'        │</text>
+        <text x="48" y="378">│ ┌─────────────────────────────────────┐ │</text>
+        <text x="48" y="393">│ │ > USER: Mudit Agrawal (IIIT Bhopal) │ │</text>
+        <text x="48" y="408">│ │ > ROLE: CP | ML | DS | Python       │ │</text>
         <text x="48" y="423">│ │ > CORE: DSA, C++, ML, Antigravity   │ │</text>
         <text x="48" y="438">│ │ > STATUS: ACTIVE [████████████] 100%│ │</text>
         <text x="48" y="453">│ └─────────────────────────────────────┘ │</text>
         <text x="48" y="468">│                                         │</text>
-        <text x="48" y="483">│ > system session: ONLINE_READY          │</text>
+        <text x="48" y="483">│ > system session: PORTRAIT_ACTIVE       │</text>
         <text x="48" y="498">└─────────────────────────────────────────┘</text>
       </g>
     </g>
@@ -281,7 +281,7 @@
     <rect x="54" y="520" width="8" height="14" fill="#22D3EE">
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
     </rect>
-    <text x="68" y="532" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">mudit-art-engine v3.0 active</text>
+    <text x="68" y="532" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">mudit-portrait-v4.0 rendering</text>
   </g>
 
   <!-- ================= RIGHT SIDE: MAIN TERMINAL WINDOW (~62%) ================= -->
@@ -307,39 +307,39 @@
     <line x1="475" y1="71" x2="1145" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
 
     <!-- Greeting Section -->
-    <g transform="translate(505, 105)">
+    <g transform="translate(505, 102)">
       <text font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">
         Hi <tspan font-size="26">👋</tspan> I'm <tspan fill="url(#primaryAccent)">Mudit Agrawal</tspan>
       </text>
     </g>
 
     <!-- Animated Typing Phrases Section -->
-    <g transform="translate(505, 126)">
+    <g transform="translate(505, 122)">
       <!-- Prompt Symbol -->
-      <text x="0" y="24" font-family="'Fira Code', monospace" font-size="16" font-weight="700" fill="#22D3EE">&gt;</text>
+      <text x="0" y="20" font-family="'Fira Code', monospace" font-size="16" font-weight="700" fill="#22D3EE">&gt;</text>
       
       <!-- Phrase 1 -->
       <g clip-path="url(#typeClip1)">
-        <text x="20" y="24" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#E2E8F0">Competitive Programmer</text>
+        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#E2E8F0">Competitive Programmer</text>
       </g>
 
       <!-- Phrase 2 -->
       <g clip-path="url(#typeClip2)">
-        <text x="20" y="24" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#22D3EE">Machine Learning Enthusiast</text>
+        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#22D3EE">Machine Learning Enthusiast</text>
       </g>
 
       <!-- Phrase 3 -->
       <g clip-path="url(#typeClip3)">
-        <text x="20" y="24" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#10B981">Data Science Enthusiast</text>
+        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#10B981">Data Science Enthusiast</text>
       </g>
 
       <!-- Phrase 4 -->
       <g clip-path="url(#typeClip4)">
-        <text x="20" y="24" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#A855F7">Python Developer</text>
+        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#A855F7">Python Developer</text>
       </g>
 
       <!-- Synchronized Moving Typing Cursor -->
-      <rect y="10" width="8" height="18" fill="#22D3EE">
+      <rect y="6" width="8" height="18" fill="#22D3EE">
         <animate attributeName="x" 
                  values="20; 20; 235; 235; 20; 20; 280; 280; 20; 20; 235; 235; 20; 20; 175; 175; 20" 
                  keyTimes="0; 0.02; 0.18; 0.23; 0.25; 0.27; 0.43; 0.48; 0.50; 0.52; 0.68; 0.73; 0.75; 0.77; 0.93; 0.98; 1" 
@@ -349,18 +349,18 @@
       </rect>
     </g>
 
-    <!-- Location, Education, Email Details (Sequential Reveal) -->
-    <g transform="translate(505, 172)">
+    <!-- Location, Education, Email Details (Seamless Spacing - Blank Gap Removed) -->
+    <g transform="translate(505, 154)">
       <!-- Location -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
         <!-- Pin Icon -->
         <path d="M 4 2 C 1.8 2 0 3.8 0 6 C 0 9.5 5 15 5 15 C 5 15 10 9.5 10 6 C 10 3.8 8.2 2 6 2 Z M 5 8 C 3.9 8 3 7.1 3 6 C 3 4.9 3.9 4 5 4 C 6.1 4 7 4.9 7 6 C 7 7.1 6.1 8 5 8 Z" fill="#22D3EE" transform="translate(0, 2) scale(1.1)"/>
-        <text x="18" y="14" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">Bhopal, MP, India</text>
+        <text x="18" y="13" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">Bhopal, MP, India</text>
       </g>
 
       <!-- College / Degree -->
-      <g transform="translate(0, 26)" opacity="0">
+      <g transform="translate(0, 24)" opacity="0">
         <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.5s" fill="freeze"/>
         <!-- Graduation Cap Icon -->
         <path d="M 0 5 L 7 1 L 14 5 L 7 9 L 0 5 Z M 2 7.5 L 2 11 C 2 12.5 4.2 13.5 7 13.5 C 9.8 13.5 12 12.5 12 11 L 12 7.5 L 7 10 L 2 7.5 Z" fill="#7C3AED" transform="translate(0, 1) scale(1.1)"/>
@@ -368,7 +368,7 @@
       </g>
 
       <!-- Email -->
-      <g transform="translate(0, 52)" opacity="0">
+      <g transform="translate(0, 48)" opacity="0">
         <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.7s" fill="freeze"/>
         <!-- Mail Icon -->
         <path d="M 1 2 C 0.4 2 0 2.4 0 3 L 0 11 C 0 11.6 0.4 12 1 12 L 13 12 C 13.6 12 14 11.6 14 11 L 14 3 C 14 2.4 13.6 2 13 2 L 1 2 Z M 1.8 3.5 L 7 7.2 L 12.2 3.5 L 12.8 4.3 L 7 8.5 L 1.2 4.3 L 1.8 3.5 Z" fill="#10B981" transform="translate(0, 2) scale(1.0)"/>
@@ -377,15 +377,15 @@
     </g>
 
     <!-- Horizontal Glow Divider Line -->
-    <line x1="505" y1="262" x2="1115" y2="262" stroke="url(#primaryAccent)" stroke-width="1" opacity="0.3"/>
+    <line x1="505" y1="242" x2="1115" y2="242" stroke="url(#primaryAccent)" stroke-width="1" opacity="0.3"/>
 
     <!-- Skills Header -->
-    <g transform="translate(505, 282)">
+    <g transform="translate(505, 260)">
       <text font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="1.5">// SKILLS &amp; TECHNOLOGIES</text>
     </g>
 
     <!-- Glowing Skills Pills Grid -->
-    <g transform="translate(505, 298)">
+    <g transform="translate(505, 276)">
       <!-- ROW 1 -->
       <!-- Pill 1: Machine Learning -->
       <g class="pill" transform="translate(0, 0)">
@@ -504,10 +504,10 @@
     </g>
 
     <!-- Bottom Divider Line -->
-    <line x1="505" y1="462" x2="1115" y2="462" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <line x1="505" y1="440" x2="1115" y2="440" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
 
     <!-- Social Links Section -->
-    <g transform="translate(505, 478)">
+    <g transform="translate(505, 458)">
       <text font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1.5">// CONNECT WITH ME</text>
       
       <g transform="translate(0, 14)">
