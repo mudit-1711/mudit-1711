@@ -241,7 +241,7 @@
   <!-- Stat 4: Coding Days -->
   <rect x="899" y="212" width="255" height="70" rx="13" fill="rgba(34,211,238,.09)" stroke="rgba(34,211,238,.32)" stroke-width="1"/>
   <rect x="899" y="212" width="255" height="3"  rx="1.5" fill="#22d3ee" opacity=".85"/>
-  <text x="1026" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#22d3ee" text-anchor="middle" letter-spacing=".5">GitHub</text>
+  <text x="1026" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#22d3ee" text-anchor="middle" letter-spacing=".5">GitHub Active Days</text>
   <line x1="919" y1="238" x2="1133" y2="238" stroke="rgba(34,211,238,.2)" stroke-width="1"/>
   <text x="1026" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">75+</text>
 
