@@ -31,7 +31,7 @@
 ### 👨‍💻 About Me
 
 - 🎓 **Education**: Pursuing B.Tech in Information Technology at **Indian Institute of Information Technology (IIIT) Bhopal**.
-- 🚀 **Focus Areas**: Machine Learning, Data Science, Data Structures & Algorithms, Competitive Programming.
+- 🚀 **Focus Areas**: Machine Learning,Deep Learning, Data Science, Data Structures & Algorithms, Competitive Programming.
 - 💡 **Core Strengths**: Analytical Problem Solving, Algorithmic Optimization, Exploratory Data Analysis, Predictive Modeling.
 - 🎯 **Current Goals**: Advanced Machine Learning Architectures, Competitive Programming Rankings, and Open-Source Contributions.
 - 💬 **Ask me about**: Python, C++, Machine Learning algorithms, Scikit-learn, and DSA strategies.
