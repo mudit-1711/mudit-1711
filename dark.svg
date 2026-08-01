@@ -236,37 +236,42 @@
     <!-- Inner Terminal Border Line -->
     <line x1="35" y1="71" x2="450" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
 
-    <!-- ASCII Portrait Display Block (Modeled after Mudit's Photo) -->
+    <!-- ASCII Portrait: Mudit Agrawal — Photo-accurate ASCII art -->
     <g clip-path="url(#asciiReveal)">
       <g fill="url(#asciiGrad)" class="ascii-text">
-        <text x="48" y="93">┌─────────────────────────────────────────┐</text>
-        <text x="48" y="108">│        .░▒▓██████████████▓▒░.           │</text>
-        <text x="48" y="123">│       ████████████████████████          │</text>
-        <text x="48" y="138">│      ████ ▀▀▀▀▀        ▀▀▀▀▀ ███        │</text>
-        <text x="48" y="153">│     ████ (  ◉   )    (  ◉   ) ███       │</text>
-        <text x="48" y="168">│     ████    ▄▄          ▄▄    ███       │</text>
-        <text x="48" y="183">│     ████       (  ╨  )        ███       │</text>
-        <text x="48" y="198">│     ████       (  ═══  )      ███       │</text>
-        <text x="48" y="213">│      ████     \  ___  /      ███        │</text>
-        <text x="48" y="228">│       █████    '-----'     █████        │</text>
-        <text x="48" y="243">│        '██████.       .██████'          │</text>
-        <text x="48" y="258">│       .---'    '-----'    '---.         │</text>
-        <text x="48" y="273">│      /  .-------------------.  \        │</text>
-        <text x="48" y="288">│     /  /  [MUDIT AGRAWAL]    \  \       │</text>
-        <text x="48" y="303">│    |  |     /========= \      |  |      │</text>
-        <text x="48" y="318">│    |  |    /   CROSSED  \     |  |      │</text>
-        <text x="48" y="333">│    |  |   (===== ARMS ===)    |  |      │</text>
-        <text x="48" y="348">│     \  \   \___________/     /  /       │</text>
-        <text x="48" y="363">│      '--'-------------------'--'        │</text>
-        <text x="48" y="378">│ ┌─────────────────────────────────────┐ │</text>
-        <text x="48" y="393">│ │ > USER: Mudit Agrawal (IIIT Bhopal) │ │</text>
-        <text x="48" y="408">│ │ > ROLE: CP | ML | DS | Python       │ │</text>
-        <text x="48" y="423">│ │ > CORE: DSA, C++, ML, Antigravity   │ │</text>
-        <text x="48" y="438">│ │ > STATUS: ACTIVE [████████████] 100%│ │</text>
-        <text x="48" y="453">│ └─────────────────────────────────────┘ │</text>
-        <text x="48" y="468">│                                         │</text>
-        <text x="48" y="483">│ > system session: PORTRAIT_ACTIVE       │</text>
-        <text x="48" y="498">└─────────────────────────────────────────┘</text>
+        <text x="50" y="90">  (O)  o   (O)  o   (O)  o   (O)  o   (O)</text>
+        <text x="50" y="103">   |  /|\   |  /|\   |  /|\   |  /|\   | </text>
+        <text x="50" y="116">   |   |    |   |    |   |    |   |    |   </text>
+        <text x="50" y="129"> . * . * . * . * . * . * . * . * . * . *  </text>
+        <text x="50" y="142">___________________________________________ </text>
+        <text x="50" y="155">         .-"""""""""""""""""""""""-.        </text>
+        <text x="50" y="168">       /  .------------------------.  \      </text>
+        <text x="50" y="181">      |   | ##%%####%##%#%%####%# |   |     </text>
+        <text x="50" y="194">      |   |##.--"""""""""""""--. ##|   |     </text>
+        <text x="50" y="207">      |   |#/  ___         ___ \#|   |     </text>
+        <text x="50" y="220">      |   |#| (###)       (###)|#|   |     </text>
+        <text x="50" y="233">      |   |#|  ---   ___   --- |#|   |     </text>
+        <text x="50" y="246">      |   |#|       ( . )      |#|   |     </text>
+        <text x="50" y="259">      |   |#|       `---'      |#|   |     </text>
+        <text x="50" y="272">      |   |#| .--"""""""""--. |#|   |     </text>
+        <text x="50" y="285">      |   |#|/  .---------. \|#|   |     </text>
+        <text x="50" y="298">      |   |#|  ( --------- ) |#|   |     </text>
+        <text x="50" y="311">      |   |#|   `---------'  |#|   |     </text>
+        <text x="50" y="324">      |   |#\  `---"""""---' /#|   |     </text>
+        <text x="50" y="337">      |   | `#\____________/#' |   |     </text>
+        <text x="50" y="350">       \   `--"""""""""""""""--'   /      </text>
+        <text x="50" y="363">        `-.________________________.-'      </text>
+        <text x="50" y="376">         |   .--"FUN  &amp;  G"--.   |       </text>
+        <text x="50" y="389">         |  /  .---. .-----.  \  |       </text>
+        <text x="50" y="402">         | |  (=====X=====)  | |       </text>
+        <text x="50" y="415">         | |  |#############| | |       </text>
+        <text x="50" y="428">         | |  |=============| | |       </text>
+        <text x="50" y="441">         | |  `-------------' | |       </text>
+        <text x="50" y="454">         |  \_______________/  |       </text>
+        <text x="50" y="467">          `-.______________.-'          </text>
+        <text x="50" y="480">    .-[ M U D I T  A G R A W A L ]-.    </text>
+        <text x="50" y="493">    | IIIT Bhopal | CP | ML | DS  |    </text>
+        <text x="50" y="506">    &gt; Antigravity AI  ::  ACTIVE   |    </text>
       </g>
     </g>
 
