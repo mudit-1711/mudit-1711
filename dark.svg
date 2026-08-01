@@ -1,554 +1,472 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" width="1180" height="620" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Dark Glass Base Gradients -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="50%" stop-color="#090d16"/>
+
+    <!-- ── Backgrounds ── -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#030712"/>
+      <stop offset="40%"  stop-color="#06080f"/>
       <stop offset="100%" stop-color="#030712"/>
     </linearGradient>
-
-    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#090E1A" stop-opacity="0.75"/>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0d1526" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#080e1c" stop-opacity="0.85"/>
     </linearGradient>
 
-    <!-- Animated Primary Accent Gradient -->
-    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED; #22D3EE; #10B981; #7C3AED" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE; #10B981; #7C3AED; #22D3EE" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#10B981">
-        <animate attributeName="stop-color" values="#10B981; #7C3AED; #22D3EE; #10B981" dur="10s" repeatCount="indefinite"/>
-      </stop>
+    <!-- ── Accent gradient ── -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="50%"  stop-color="#22D3EE"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#10B981"><animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="8s" repeatCount="indefinite"/></stop>
     </linearGradient>
 
-    <!-- ASCII Animated Gradient -->
-    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE; #a855f7; #ec4899; #22D3EE" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED; #22D3EE; #10B981; #7C3AED" dur="8s" repeatCount="indefinite"/>
-      </stop>
+    <!-- Name gradient -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#a78bfa"><animate attributeName="stop-color" values="#a78bfa;#38bdf8;#34d399;#a78bfa" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#38bdf8"><animate attributeName="stop-color" values="#38bdf8;#34d399;#a78bfa;#38bdf8" dur="10s" repeatCount="indefinite"/></stop>
     </linearGradient>
 
-    <!-- Border Shimmer Gradient -->
-    <linearGradient id="borderShimmer" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.6">
-        <animate attributeName="stop-color" values="#7C3AED; #22D3EE; #10B981; rgba(255,255,255,0.1); #7C3AED" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="rgba(255,255,255,0.08)"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.6">
-        <animate attributeName="stop-color" values="#22D3EE; #10B981; #7C3AED; rgba(255,255,255,0.1); #22D3EE" dur="6s" repeatCount="indefinite"/>
-      </stop>
+    <!-- Border shimmer -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.7"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="5s" repeatCount="indefinite"/></stop>
+      <stop offset="50%"  stop-color="rgba(255,255,255,0.07)"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.7"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="5s" repeatCount="indefinite"/></stop>
     </linearGradient>
 
-    <!-- Floating Background Orbs Gradients -->
-    <radialGradient id="orbPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="orbCyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="orbEmerald" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Scanline Gradient -->
-    <linearGradient id="scanlineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Glass Reflection Gradient -->
-    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
-      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.02"/>
+    <!-- Glass -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.07"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Cyber Grid Pattern -->
-    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
-      <circle cx="40" cy="0" r="1" fill="rgba(34, 211, 238, 0.15)"/>
+    <!-- Graph card gradient -->
+    <linearGradient id="graphCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0f1f3d" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#07101f" stop-opacity="0.90"/>
+    </linearGradient>
+
+    <!-- Graph line gradient -->
+    <linearGradient id="graphLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7C3AED"/>
+      <stop offset="50%"  stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Graph fill gradient (under line) -->
+    <linearGradient id="graphFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Orb gradients -->
+    <radialGradient id="orbA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#10B981" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Scanline -->
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#22D3EE" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Dot pattern -->
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(148,163,184,0.055)"/>
     </pattern>
 
-    <!-- Glow Filters -->
-    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <!-- Filters -->
+    <filter id="glow"     x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop"     x="-5%"  y="-5%"  width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="pillGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="lineGlow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
-    </filter>
+    <!-- Typing animation clips -->
+    <clipPath id="t1"><rect x="560" y="134" height="26" width="0">
+      <animate attributeName="width" values="0;0;260;260;0;0" keyTimes="0;0.02;0.20;0.24;0.26;1" dur="14s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="t2"><rect x="560" y="134" height="26" width="0">
+      <animate attributeName="width" values="0;0;305;305;0;0" keyTimes="0;0.27;0.45;0.49;0.51;1" dur="14s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="t3"><rect x="560" y="134" height="26" width="0">
+      <animate attributeName="width" values="0;0;260;260;0;0" keyTimes="0;0.52;0.70;0.74;0.76;1" dur="14s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="t4"><rect x="560" y="134" height="26" width="0">
+      <animate attributeName="width" values="0;0;185;185;0;0" keyTimes="0;0.77;0.95;0.99;1;1" dur="14s" repeatCount="indefinite"/>
+    </rect></clipPath>
 
-    <!-- ASCII Reveal Clipping Mask -->
-    <clipPath id="asciiReveal">
-      <rect x="45" y="70" width="390" height="0">
-        <animate attributeName="height" values="0; 475" dur="2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </clipPath>
-
-    <!-- Sequential Typing Clips for Terminal Phrases -->
-    <!-- Phrase 1: Competitive Programmer -->
-    <clipPath id="typeClip1">
-      <rect x="495" y="128" width="0" height="26">
-        <animate attributeName="width" values="0; 0; 245; 245; 0; 0" keyTimes="0; 0.02; 0.18; 0.23; 0.25; 1" dur="12s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <!-- Phrase 2: Machine Learning Enthusiast -->
-    <clipPath id="typeClip2">
-      <rect x="495" y="128" width="0" height="26">
-        <animate attributeName="width" values="0; 0; 290; 290; 0; 0" keyTimes="0; 0.27; 0.43; 0.48; 0.50; 1" dur="12s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <!-- Phrase 3: Data Science Enthusiast -->
-    <clipPath id="typeClip3">
-      <rect x="495" y="128" width="0" height="26">
-        <animate attributeName="width" values="0; 0; 245; 245; 0; 0" keyTimes="0; 0.52; 0.68; 0.73; 0.75; 1" dur="12s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <!-- Phrase 4: Python Developer -->
-    <clipPath id="typeClip4">
-      <rect x="495" y="128" width="0" height="26">
-        <animate attributeName="width" values="0; 0; 180; 180; 0; 0" keyTimes="0; 0.77; 0.93; 0.98; 1; 1" dur="12s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
+    <!-- Graph animation: draw the polyline via strokeDashoffset -->
+    <!-- The polyline path length is approximately 500 -->
 
     <style>
-      @keyframes floatSlow {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-7px); }
-        100% { transform: translateY(0px); }
-      }
-      .pill {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-      }
-      .pill:hover {
-        transform: translateY(-3px) scale(1.04);
-        fill: rgba(124, 58, 237, 0.25) !important;
-        stroke: #22D3EE !important;
-        filter: drop-shadow(0 4px 12px rgba(34, 211, 238, 0.4));
-      }
-      .social-card {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-      }
-      .social-card:hover {
-        transform: translateY(-2px);
-        fill: rgba(34, 211, 238, 0.12) !important;
-        stroke: #22D3EE !important;
-        filter: drop-shadow(0 4px 12px rgba(34, 211, 238, 0.3));
-      }
-      .social-card:hover .social-text {
-        fill: #22D3EE !important;
-      }
-      .ascii-text {
-        font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
-        font-size: 10.2px;
-        letter-spacing: 0.4px;
-        white-space: pre;
-      }
+      .pill { cursor: pointer; }
+      .pill rect { transition: all .3s ease; }
+      .pill:hover rect { fill: rgba(34,211,238,0.15) !important; stroke: #22D3EE !important; }
+      .pill:hover text { fill: #ffffff !important; }
+      .soc { cursor: pointer; }
+      .soc rect { transition: all .3s ease; }
+      .soc:hover rect { fill: rgba(34,211,238,0.10) !important; stroke: #22D3EE !important; }
+      .soc:hover text { fill: #22D3EE !important; }
     </style>
   </defs>
 
-  <!-- ================= BASE CANVAS ================= -->
-  <rect width="1180" height="610" rx="20" fill="url(#bgGradient)"/>
-  
-  <!-- Cyber Grid Background -->
-  <rect width="1180" height="610" rx="20" fill="url(#cyberGrid)"/>
+  <!-- ══ BASE ══ -->
+  <rect width="1180" height="620" rx="22" fill="url(#bgGrad)"/>
+  <rect width="1180" height="620" rx="22" fill="url(#dots)"/>
 
-  <!-- Dynamic Ambient Radial Glow Orbs -->
-  <g filter="url(#glowFilter)">
-    <!-- Cyan Glow Top-Left -->
-    <circle cx="220" cy="150" r="280" fill="url(#orbCyan)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 30,20; -20,30; 0,0" dur="14s" repeatCount="indefinite"/>
+  <!-- ══ AMBIENT GLOW ORBS ══ -->
+  <g filter="url(#glow)">
+    <circle cx="160"  cy="220" r="300" fill="url(#orbB)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;40,25;-20,40;0,0" dur="15s" repeatCount="indefinite"/>
     </circle>
-    <!-- Purple Glow Right -->
-    <circle cx="900" cy="300" r="320" fill="url(#orbPurple)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; -40,-30; 20,-40; 0,0" dur="16s" repeatCount="indefinite"/>
+    <circle cx="1020" cy="160" r="280" fill="url(#orbA)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-35,-20;25,-35;0,0" dur="18s" repeatCount="indefinite"/>
     </circle>
-    <!-- Emerald Glow Bottom-Left -->
-    <circle cx="350" cy="500" r="240" fill="url(#orbEmerald)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 20,-20; -30,-10; 0,0" dur="12s" repeatCount="indefinite"/>
+    <circle cx="700"  cy="520" r="260" fill="url(#orbC)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;20,-25;-30,10;0,0" dur="12s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Floating Particles Overlay -->
-  <g fill="#22D3EE" opacity="0.5">
-    <circle cx="120" cy="180" r="1.5">
-      <animate attributeName="cy" values="180; 120; 180" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.2; 0.8; 0.2" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="420" cy="480" r="1">
-      <animate attributeName="cy" values="480; 410; 480" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="780" cy="140" r="2" fill="#7C3AED">
-      <animate attributeName="cy" values="140; 80; 140" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3; 0.9; 0.3" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1050" cy="380" r="1.5" fill="#10B981">
-      <animate attributeName="cy" values="380; 320; 380" dur="10s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.2; 0.8; 0.2" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="600" cy="520" r="1">
-      <animate attributeName="cy" values="520; 460; 520" dur="6s" repeatCount="indefinite"/>
-    </circle>
+  <!-- ══ FLOATING PARTICLES ══ -->
+  <g fill="#22D3EE">
+    <circle cx="90"   cy="140" r="1.5" opacity="0.4"><animate attributeName="cy" values="140;80;140"   dur="7s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.7;0.2" dur="7s"  repeatCount="indefinite"/></circle>
+    <circle cx="340"  cy="500" r="1"   opacity="0.3"><animate attributeName="cy" values="500;440;500"  dur="9s"  repeatCount="indefinite"/></circle>
+    <circle cx="950"  cy="80"  r="2"   fill="#a78bfa" opacity="0.4"><animate attributeName="cy" values="80;30;80" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1100" cy="370" r="1.5" fill="#10B981" opacity="0.3"><animate attributeName="cy" values="370;320;370" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="590"  cy="560" r="1"   opacity="0.3"><animate attributeName="cy" values="560;510;560"  dur="6s"  repeatCount="indefinite"/></circle>
+    <circle cx="770"  cy="60"  r="1.5" fill="#f472b6" opacity="0.35"><animate attributeName="cy" values="60;20;60" dur="10s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Canvas Shimmer Outer Border -->
-  <rect x="10" y="10" width="1160" height="590" rx="18" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5" opacity="0.8"/>
+  <!-- ══ CANVAS BORDER ══ -->
+  <rect x="8" y="8" width="1164" height="604" rx="20" fill="none" stroke="url(#shimmer)" stroke-width="1.5" opacity="0.9"/>
 
-  <!-- ================= LEFT SIDE: MUDIT AGRAWAL ASCII PORTRAIT (~38%) ================= -->
-  <g transform="translate(0,0)" style="animation: floatSlow 6s ease-in-out indefinite;">
-    <!-- ASCII Card Container -->
-    <rect x="35" y="35" width="415" height="540" rx="16" fill="url(#panelGradient)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#softShadow)"/>
-    
-    <!-- Top Glass Highlight -->
-    <path d="M 35 51 A 16 16 0 0 1 51 35 L 434 35 A 16 16 0 0 1 450 51 L 450 120 L 35 120 Z" fill="url(#glassReflect)"/>
-    <rect x="35" y="35" width="415" height="540" rx="16" fill="none" stroke="url(#borderShimmer)" stroke-width="1" opacity="0.5"/>
+  <!-- ══ MAIN PANEL ══ -->
+  <rect x="30" y="30" width="1120" height="560" rx="18" fill="url(#panelGrad)" filter="url(#drop)"/>
+  <rect x="30" y="30" width="1120" height="110" rx="18" fill="url(#glassReflect)"/>
+  <rect x="30" y="30" width="1120" height="560" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
 
-    <!-- Terminal Header Dots & Bar -->
-    <rect x="35" y="35" width="415" height="36" rx="16" fill="rgba(15, 23, 42, 0.6)"/>
-    <circle cx="58" cy="53" r="5.5" fill="#FF5F56"/>
-    <circle cx="76" cy="53" r="5.5" fill="#FFBD2E"/>
-    <circle cx="94" cy="53" r="5.5" fill="#27C93F"/>
-    <text x="242" y="57" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" text-anchor="middle" opacity="0.8">mudit@bhopal:~/mudit_portrait.ascii</text>
+  <!-- ══ TERMINAL HEADER BAR ══ -->
+  <rect x="30" y="30" width="1120" height="40" rx="18" fill="rgba(10,15,28,0.85)"/>
+  <line x1="30" y1="70" x2="1150" y2="70" stroke="rgba(255,255,255,0.055)" stroke-width="1"/>
+  <circle cx="58"  cy="50" r="6" fill="#FF5F56"/>
+  <circle cx="80"  cy="50" r="6" fill="#FFBD2E"/>
+  <circle cx="102" cy="50" r="6" fill="#27C93F"/>
+  <rect x="460" y="38" width="260" height="22" rx="6" fill="rgba(255,255,255,0.05)"/>
+  <text x="590" y="53" font-family="'Fira Code',monospace" font-size="10.5" fill="#64748B" text-anchor="middle">mudit@bhopal — zsh — 1180×620</text>
+  <text x="1090" y="55" font-family="'Fira Code',monospace" font-size="11" fill="#334155" text-anchor="middle">⊞ ⊟ ✕</text>
 
-    <!-- Inner Terminal Border Line -->
-    <line x1="35" y1="71" x2="450" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
+  <!-- ══ SCANLINE ══ -->
+  <rect x="30" y="70" width="1120" height="28" fill="url(#scanGrad)" opacity="1">
+    <animate attributeName="y" values="70;582;70" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
-    <!-- ASCII Portrait: Mudit Agrawal — Photo-accurate ASCII art -->
-    <g clip-path="url(#asciiReveal)">
-      <g fill="url(#asciiGrad)" class="ascii-text">
-        <text x="50" y="90">  (O)  o   (O)  o   (O)  o   (O)  o   (O)</text>
-        <text x="50" y="103">   |  /|\   |  /|\   |  /|\   |  /|\   | </text>
-        <text x="50" y="116">   |   |    |   |    |   |    |   |    |   </text>
-        <text x="50" y="129"> . * . * . * . * . * . * . * . * . * . *  </text>
-        <text x="50" y="142">___________________________________________ </text>
-        <text x="50" y="155">         .-"""""""""""""""""""""""-.        </text>
-        <text x="50" y="168">       /  .------------------------.  \      </text>
-        <text x="50" y="181">      |   | ##%%####%##%#%%####%# |   |     </text>
-        <text x="50" y="194">      |   |##.--"""""""""""""--. ##|   |     </text>
-        <text x="50" y="207">      |   |#/  ___         ___ \#|   |     </text>
-        <text x="50" y="220">      |   |#| (###)       (###)|#|   |     </text>
-        <text x="50" y="233">      |   |#|  ---   ___   --- |#|   |     </text>
-        <text x="50" y="246">      |   |#|       ( . )      |#|   |     </text>
-        <text x="50" y="259">      |   |#|       `---'      |#|   |     </text>
-        <text x="50" y="272">      |   |#| .--"""""""""--. |#|   |     </text>
-        <text x="50" y="285">      |   |#|/  .---------. \|#|   |     </text>
-        <text x="50" y="298">      |   |#|  ( --------- ) |#|   |     </text>
-        <text x="50" y="311">      |   |#|   `---------'  |#|   |     </text>
-        <text x="50" y="324">      |   |#\  `---"""""---' /#|   |     </text>
-        <text x="50" y="337">      |   | `#\____________/#' |   |     </text>
-        <text x="50" y="350">       \   `--"""""""""""""""--'   /      </text>
-        <text x="50" y="363">        `-.________________________.-'      </text>
-        <text x="50" y="376">         |   .--"FUN  &amp;  G"--.   |       </text>
-        <text x="50" y="389">         |  /  .---. .-----.  \  |       </text>
-        <text x="50" y="402">         | |  (=====X=====)  | |       </text>
-        <text x="50" y="415">         | |  |#############| | |       </text>
-        <text x="50" y="428">         | |  |=============| | |       </text>
-        <text x="50" y="441">         | |  `-------------' | |       </text>
-        <text x="50" y="454">         |  \_______________/  |       </text>
-        <text x="50" y="467">          `-.______________.-'          </text>
-        <text x="50" y="480">    .-[ M U D I T  A G R A W A L ]-.    </text>
-        <text x="50" y="493">    | IIIT Bhopal | CP | ML | DS  |    </text>
-        <text x="50" y="506">    &gt; Antigravity AI  ::  ACTIVE   |    </text>
-      </g>
-    </g>
+  <!-- ═══════════════════════════════════════════════════════
+       TOP LEFT: GREETING + NAME + TYPING
+  ═══════════════════════════════════════════════════════ -->
+  <text x="80" y="106" font-family="'Fira Code',monospace" font-size="13" font-weight="500" fill="#22D3EE" letter-spacing="3">// HELLO WORLD</text>
 
-    <!-- Moving Cyber Scanline Effect -->
-    <g clip-path="url(#asciiReveal)">
-      <rect x="40" y="75" width="405" height="18" fill="url(#scanlineGrad)" opacity="0.6">
-        <animate attributeName="y" values="75; 510; 75" dur="4.5s" repeatCount="indefinite"/>
-      </rect>
-    </g>
+  <!-- Typing subtitle — placed left, before name -->
+  <text x="537" y="132" font-family="'Fira Code',monospace" font-size="15" font-weight="700" fill="#22D3EE">▶</text>
+  <g clip-path="url(#t1)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#E2E8F0">Competitive Programmer</text></g>
+  <g clip-path="url(#t2)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#22D3EE">Machine Learning Enthusiast</text></g>
+  <g clip-path="url(#t3)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#10B981">Data Science Enthusiast</text></g>
+  <g clip-path="url(#t4)"><text x="560" y="152" font-family="'Fira Code',monospace" font-size="13.5" font-weight="600" fill="#a78bfa">Python Developer</text></g>
+  <!-- Cursor -->
+  <rect x="560" y="138" width="9" height="18" fill="#22D3EE" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="0.75s" repeatCount="indefinite"/>
+    <animate attributeName="x"
+      values="560;560;238;238;560;560;308;308;560;560;273;273;560;560;203;203;560"
+      keyTimes="0;0.02;0.20;0.24;0.27;0.27;0.45;0.49;0.52;0.52;0.70;0.74;0.77;0.77;0.95;0.99;1"
+      dur="14s" repeatCount="indefinite"/>
+  </rect>
 
-    <!-- Terminal Cursor Blink at bottom left -->
-    <rect x="54" y="520" width="8" height="14" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
-    </rect>
-    <text x="68" y="532" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">mudit-portrait-v4.0 rendering</text>
+  <!-- Big name -->
+  <text x="80" y="175" font-family="'Inter',system-ui,sans-serif" font-size="50" font-weight="900" fill="#F1F5F9" letter-spacing="-1">Hi 👋  I'm <tspan fill="url(#nameGrad)">Mudit Agrawal</tspan></text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TOP RIGHT: LIVE RATING GRAPH CARD
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- Graph Card container -->
+  <rect x="660" y="78" width="450" height="115" rx="14" fill="url(#graphCardGrad)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+  <!-- Glass inner highlight -->
+  <rect x="660" y="78" width="450" height="40" rx="14" fill="rgba(255,255,255,0.035)"/>
+
+  <!-- Card header -->
+  <text x="678" y="98" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#22D3EE" letter-spacing="1.5">// RATING TREND</text>
+
+  <!-- Platform labels -->
+  <rect x="810" y="84" width="84" height="18" rx="4" fill="rgba(234,179,8,0.15)" stroke="rgba(234,179,8,0.35)" stroke-width="1"/>
+  <text x="852" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#EAB308" text-anchor="middle">LeetCode</text>
+
+  <rect x="902" y="84" width="96" height="18" rx="4" fill="rgba(30,144,255,0.15)" stroke="rgba(30,144,255,0.35)" stroke-width="1"/>
+  <text x="950" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#60a5fa" text-anchor="middle">Codeforces</text>
+
+  <rect x="1006" y="84" width="90" height="18" rx="4" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.35)" stroke-width="1"/>
+  <text x="1051" y="96" font-family="'Fira Code',monospace" font-size="9" fill="#10B981" text-anchor="middle">Codolio</text>
+
+  <!-- Graph area: x from 672 to 1098, y from 105 to 175 -->
+  <!-- Grid lines (horizontal) -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="3,4">
+    <line x1="672" y1="110" x2="1098" y2="110"/>
+    <line x1="672" y1="127" x2="1098" y2="127"/>
+    <line x1="672" y1="144" x2="1098" y2="144"/>
+    <line x1="672" y1="161" x2="1098" y2="161"/>
+    <line x1="672" y1="178" x2="1098" y2="178"/>
   </g>
 
-  <!-- ================= RIGHT SIDE: MAIN TERMINAL WINDOW (~62%) ================= -->
-  <g transform="translate(0,0)">
-    <!-- Right Panel Glass Frame -->
-    <rect x="475" y="35" width="670" height="540" rx="16" fill="url(#panelGradient)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#softShadow)"/>
-    
-    <!-- Right Glass Reflection Header -->
-    <path d="M 475 51 A 16 16 0 0 1 491 35 L 1129 35 A 16 16 0 0 1 1145 51 L 1145 130 L 475 130 Z" fill="url(#glassReflect)"/>
-    <rect x="475" y="35" width="670" height="540" rx="16" fill="none" stroke="url(#borderShimmer)" stroke-width="1" opacity="0.4"/>
+  <!-- Y-axis labels -->
+  <text x="668" y="113" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">2000</text>
+  <text x="668" y="130" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1800</text>
+  <text x="668" y="147" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1600</text>
+  <text x="668" y="164" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1400</text>
+  <text x="668" y="181" font-family="'Fira Code',monospace" font-size="8" fill="#334155" text-anchor="end">1200</text>
 
-    <!-- Right Terminal Header -->
-    <rect x="475" y="35" width="670" height="36" rx="16" fill="rgba(15, 23, 42, 0.6)"/>
-    <circle cx="498" cy="53" r="5.5" fill="#FF5F56"/>
-    <circle cx="516" cy="53" r="5.5" fill="#FFBD2E"/>
-    <circle cx="534" cy="53" r="5.5" fill="#27C93F"/>
-    
-    <g transform="translate(555, 45)">
-      <rect width="180" height="18" rx="4" fill="rgba(255,255,255,0.05)"/>
-      <text x="90" y="13" font-family="'Fira Code', monospace" font-size="10" fill="#94A3B8" text-anchor="middle">mudit@bhopal:~ (zsh)</text>
+  <!-- LeetCode rating line (orange-yellow) — simulated upward trend -->
+  <!-- Points: realistic CP rating journey, upward trend with fluctuations -->
+  <polyline
+    points="672,178 702,175 730,171 758,174 785,168 810,162 836,165 860,157 882,150 904,153 924,146 944,138 962,141 980,133 1000,128 1018,122 1038,118 1058,115 1078,112 1098,110"
+    fill="none"
+    stroke="#EAB308"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="520"
+    stroke-dashoffset="520"
+    filter="url(#lineGlow)"
+    opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="520;0" dur="2.5s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </polyline>
+
+  <!-- Fill area under LeetCode line -->
+  <polygon
+    points="672,178 702,175 730,171 758,174 785,168 810,162 836,165 860,157 882,150 904,153 924,146 944,138 962,141 980,133 1000,128 1018,122 1038,118 1058,115 1078,112 1098,110 1098,182 672,182"
+    fill="url(#graphFillGrad)"
+    opacity="0">
+    <animate attributeName="opacity" values="0;0.18" dur="1s" begin="2.5s" fill="freeze"/>
+  </polygon>
+
+  <!-- Codeforces rating line (blue) — slightly lower, also trending up -->
+  <polyline
+    points="672,182 702,180 730,176 758,179 785,173 810,168 836,172 860,164 882,158 904,161 924,155 944,150 962,152 980,145 1000,141 1018,136 1038,132 1058,129 1078,126 1098,122"
+    fill="none"
+    stroke="#60a5fa"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="520"
+    stroke-dashoffset="520"
+    opacity="0.75">
+    <animate attributeName="stroke-dashoffset" values="520;0" dur="2.5s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </polyline>
+
+  <!-- Data points (LeetCode) — glowing dots -->
+  <g fill="#EAB308" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3s" fill="freeze"/>
+    <circle cx="702"  cy="175" r="2.5"/>
+    <circle cx="758"  cy="174" r="2.5"/>
+    <circle cx="836"  cy="165" r="2.5"/>
+    <circle cx="904"  cy="153" r="2.5"/>
+    <circle cx="962"  cy="141" r="2.5"/>
+    <circle cx="1018" cy="122" r="2.5"/>
+    <circle cx="1078" cy="112" r="2.5"/>
+    <!-- Endpoint glow -->
+    <circle cx="1098" cy="110" r="4.5" opacity="0.5"/>
+    <circle cx="1098" cy="110" r="2.5"/>
+  </g>
+
+  <!-- Current rating badge -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="3.2s" fill="freeze"/>
+    <rect x="1060" y="96" width="82" height="22" rx="5" fill="rgba(234,179,8,0.25)" stroke="rgba(234,179,8,0.6)" stroke-width="1"/>
+    <text x="1101" y="111" font-family="'Inter',system-ui,sans-serif" font-size="11" font-weight="800" fill="#FDE047" text-anchor="middle">★ 1800+</text>
+  </g>
+
+  <!-- X axis labels (contest months) -->
+  <g font-family="'Fira Code',monospace" font-size="7.5" fill="#1e293b" text-anchor="middle">
+    <text x="702"  y="192">Jan</text>
+    <text x="785"  y="192">Mar</text>
+    <text x="860"  y="192">May</text>
+    <text x="944"  y="192">Jul</text>
+    <text x="1018" y="192">Sep</text>
+    <text x="1098" y="192">Now</text>
+  </g>
+
+  <!-- ══ MAIN DIVIDER ══ -->
+  <line x1="80" y1="200" x2="1100" y2="200" stroke="url(#accentGrad)" stroke-width="1" opacity="0.35"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       INFO ROW
+  ═══════════════════════════════════════════════════════ -->
+  <g transform="translate(80,218)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.2s" fill="freeze"/>
+
+    <!-- Location -->
+    <g transform="translate(0,0)">
+      <circle cx="9" cy="9" r="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+      <circle cx="9" cy="9" r="2.5" fill="#22D3EE"/>
+      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">Bhopal, MP, India</text>
     </g>
+    <line x1="150" y1="2" x2="150" y2="18" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
 
-    <line x1="475" y1="71" x2="1145" y2="71" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
-
-    <!-- Greeting Section -->
-    <g transform="translate(505, 102)">
-      <text font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">
-        Hi <tspan font-size="26">👋</tspan> I'm <tspan fill="url(#primaryAccent)">Mudit Agrawal</tspan>
-      </text>
+    <!-- College -->
+    <g transform="translate(163,0)">
+      <path d="M0 10 L8 5 L16 10 L8 15 Z M3 12 L3 18 Q8 20 13 18 L13 12 L8 15 Z" fill="none" stroke="#7C3AED" stroke-width="1.4" stroke-linejoin="round"/>
+      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">B.Tech IT — <tspan fill="#94A3B8">IIIT Bhopal</tspan></text>
     </g>
+    <line x1="382" y1="2" x2="382" y2="18" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
 
-    <!-- Animated Typing Phrases Section -->
-    <g transform="translate(505, 122)">
-      <!-- Prompt Symbol -->
-      <text x="0" y="20" font-family="'Fira Code', monospace" font-size="16" font-weight="700" fill="#22D3EE">&gt;</text>
-      
-      <!-- Phrase 1 -->
-      <g clip-path="url(#typeClip1)">
-        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#E2E8F0">Competitive Programmer</text>
-      </g>
-
-      <!-- Phrase 2 -->
-      <g clip-path="url(#typeClip2)">
-        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#22D3EE">Machine Learning Enthusiast</text>
-      </g>
-
-      <!-- Phrase 3 -->
-      <g clip-path="url(#typeClip3)">
-        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#10B981">Data Science Enthusiast</text>
-      </g>
-
-      <!-- Phrase 4 -->
-      <g clip-path="url(#typeClip4)">
-        <text x="20" y="20" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#A855F7">Python Developer</text>
-      </g>
-
-      <!-- Synchronized Moving Typing Cursor -->
-      <rect y="6" width="8" height="18" fill="#22D3EE">
-        <animate attributeName="x" 
-                 values="20; 20; 235; 235; 20; 20; 280; 280; 20; 20; 235; 235; 20; 20; 175; 175; 20" 
-                 keyTimes="0; 0.02; 0.18; 0.23; 0.25; 0.27; 0.43; 0.48; 0.50; 0.52; 0.68; 0.73; 0.75; 0.77; 0.93; 0.98; 1" 
-                 dur="12s" 
-                 repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0;1" dur="0.7s" repeatCount="indefinite"/>
-      </rect>
-    </g>
-
-    <!-- Location, Education, Email Details (Seamless Spacing - Blank Gap Removed) -->
-    <g transform="translate(505, 154)">
-      <!-- Location -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
-        <!-- Pin Icon -->
-        <path d="M 4 2 C 1.8 2 0 3.8 0 6 C 0 9.5 5 15 5 15 C 5 15 10 9.5 10 6 C 10 3.8 8.2 2 6 2 Z M 5 8 C 3.9 8 3 7.1 3 6 C 3 4.9 3.9 4 5 4 C 6.1 4 7 4.9 7 6 C 7 7.1 6.1 8 5 8 Z" fill="#22D3EE" transform="translate(0, 2) scale(1.1)"/>
-        <text x="18" y="13" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">Bhopal, MP, India</text>
-      </g>
-
-      <!-- College / Degree -->
-      <g transform="translate(0, 24)" opacity="0">
-        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.5s" fill="freeze"/>
-        <!-- Graduation Cap Icon -->
-        <path d="M 0 5 L 7 1 L 14 5 L 7 9 L 0 5 Z M 2 7.5 L 2 11 C 2 12.5 4.2 13.5 7 13.5 C 9.8 13.5 12 12.5 12 11 L 12 7.5 L 7 10 L 2 7.5 Z" fill="#7C3AED" transform="translate(0, 1) scale(1.1)"/>
-        <text x="18" y="13" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">B.Tech IT — <tspan fill="#94A3B8">Indian Institute of Information Technology (IIIT) Bhopal</tspan></text>
-      </g>
-
-      <!-- Email -->
-      <g transform="translate(0, 48)" opacity="0">
-        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.7s" fill="freeze"/>
-        <!-- Mail Icon -->
-        <path d="M 1 2 C 0.4 2 0 2.4 0 3 L 0 11 C 0 11.6 0.4 12 1 12 L 13 12 C 13.6 12 14 11.6 14 11 L 14 3 C 14 2.4 13.6 2 13 2 L 1 2 Z M 1.8 3.5 L 7 7.2 L 12.2 3.5 L 12.8 4.3 L 7 8.5 L 1.2 4.3 L 1.8 3.5 Z" fill="#10B981" transform="translate(0, 2) scale(1.0)"/>
-        <text x="18" y="13" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">muditagrawal06@gmail.com</text>
-      </g>
-    </g>
-
-    <!-- Horizontal Glow Divider Line -->
-    <line x1="505" y1="242" x2="1115" y2="242" stroke="url(#primaryAccent)" stroke-width="1" opacity="0.3"/>
-
-    <!-- Skills Header -->
-    <g transform="translate(505, 260)">
-      <text font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="1.5">// SKILLS &amp; TECHNOLOGIES</text>
-    </g>
-
-    <!-- Glowing Skills Pills Grid -->
-    <g transform="translate(505, 276)">
-      <!-- ROW 1 -->
-      <!-- Pill 1: Machine Learning -->
-      <g class="pill" transform="translate(0, 0)">
-        <rect width="138" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#7C3AED"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Machine Learning</text>
-      </g>
-
-      <!-- Pill 2: Python -->
-      <g class="pill" transform="translate(146, 0)">
-        <rect width="78" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#22D3EE"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Python</text>
-      </g>
-
-      <!-- Pill 3: C++ -->
-      <g class="pill" transform="translate(232, 0)">
-        <rect width="62" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#10B981"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">C++</text>
-      </g>
-
-      <!-- Pill 4: Data Structures & Algorithms (DSA) -->
-      <g class="pill" transform="translate(302, 0)">
-        <rect width="215" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#F59E0B"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Data Structures &amp; Algorithms</text>
-      </g>
-
-      <!-- ROW 2 -->
-      <!-- Pill 5: Competitive Programming -->
-      <g class="pill" transform="translate(0, 36)">
-        <rect width="175" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#EC4899"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Competitive Programming</text>
-      </g>
-
-      <!-- Pill 6: Problem Solving -->
-      <g class="pill" transform="translate(183, 36)">
-        <rect width="126" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#3B82F6"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Problem Solving</text>
-      </g>
-
-      <!-- Pill 7: Data Science -->
-      <g class="pill" transform="translate(317, 36)">
-        <rect width="104" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#10B981"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Data Science</text>
-      </g>
-
-      <!-- Pill 8: Scikit-learn -->
-      <g class="pill" transform="translate(429, 36)">
-        <rect width="95" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#F97316"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Scikit-learn</text>
-      </g>
-
-      <!-- ROW 3 -->
-      <!-- Pill 9: Pandas -->
-      <g class="pill" transform="translate(0, 72)">
-        <rect width="74" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#8B5CF6"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Pandas</text>
-      </g>
-
-      <!-- Pill 10: NumPy -->
-      <g class="pill" transform="translate(82, 72)">
-        <rect width="72" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#06B6D4"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">NumPy</text>
-      </g>
-
-      <!-- Pill 11: Data Visualization -->
-      <g class="pill" transform="translate(162, 72)">
-        <rect width="132" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#EAB308"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Data Visualization</text>
-      </g>
-
-      <!-- Pill 12: EDA -->
-      <g class="pill" transform="translate(302, 72)">
-        <rect width="64" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#EC4899"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">EDA</text>
-      </g>
-
-      <!-- Pill 13: Git & GitHub -->
-      <g class="pill" transform="translate(374, 72)">
-        <rect width="102" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#F43F5E"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Git &amp; GitHub</text>
-      </g>
-
-      <!-- ROW 4 -->
-      <!-- Pill 14: Streamlit -->
-      <g class="pill" transform="translate(0, 108)">
-        <rect width="86" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#FF4B4B"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Streamlit</text>
-      </g>
-
-      <!-- Pill 15: Object-Oriented Programming (OOP) -->
-      <g class="pill" transform="translate(94, 108)">
-        <rect width="84" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#6366F1"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">OOP</text>
-      </g>
-
-      <!-- Pill 16: Antigravity -->
-      <g class="pill" transform="translate(186, 108)">
-        <rect width="102" height="28" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <circle cx="14" cy="14" r="3.5" fill="#7C3AED"/>
-        <text x="24" y="18" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#F1F5F9">Antigravity</text>
-      </g>
-    </g>
-
-    <!-- Bottom Divider Line -->
-    <line x1="505" y1="440" x2="1115" y2="440" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-
-    <!-- Social Links Section -->
-    <g transform="translate(505, 458)">
-      <text font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1.5">// CONNECT WITH ME</text>
-      
-      <g transform="translate(0, 14)">
-        <!-- GitHub Link Button -->
-        <a href="https://github.com/mudit-1711" target="_blank">
-          <g class="social-card" transform="translate(0, 0)">
-            <rect width="180" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-            <!-- GitHub Icon Path -->
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill="#F8FAFC" transform="translate(10, 8) scale(0.8)"/>
-            <text x="36" y="22" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" class="social-text">GitHub</text>
-            <text x="88" y="22" font-family="'Fira Code', monospace" font-size="10" fill="#64748B">mudit-1711</text>
-          </g>
-        </a>
-
-        <!-- LinkedIn Link Button -->
-        <a href="https://www.linkedin.com/in/mudit-agrawal17" target="_blank">
-          <g class="social-card" transform="translate(192, 0)">
-            <rect width="195" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-            <!-- LinkedIn Icon Path -->
-            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z" fill="#0A66C2" transform="translate(10, 8) scale(0.8)"/>
-            <text x="36" y="22" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" class="social-text">LinkedIn</text>
-            <text x="96" y="22" font-family="'Fira Code', monospace" font-size="10" fill="#64748B">mudit-agrawal17</text>
-          </g>
-        </a>
-
-        <!-- Codolio Link Button -->
-        <a href="https://codolio.com/profile/mudit_1711" target="_blank">
-          <g class="social-card" transform="translate(399, 0)">
-            <rect width="210" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-            <!-- Codolio Flame/Code Icon -->
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(8, 6) scale(0.8)"/>
-            <text x="36" y="22" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0" class="social-text">Codolio</text>
-            <text x="90" y="22" font-family="'Fira Code', monospace" font-size="10" fill="#64748B">mudit_1711</text>
-          </g>
-        </a>
-      </g>
+    <!-- Email -->
+    <g transform="translate(396,0)">
+      <rect x="0" y="3" width="16" height="12" rx="2" fill="none" stroke="#10B981" stroke-width="1.4"/>
+      <path d="M0 6 L8 11 L16 6" fill="none" stroke="#10B981" stroke-width="1.3"/>
+      <text x="22" y="14" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">muditagrawal06@gmail.com</text>
     </g>
   </g>
+
+  <!-- ══ DIVIDER ══ -->
+  <line x1="80" y1="256" x2="1100" y2="256" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════════════════ -->
+  <text x="80" y="284" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
+
+  <!-- ── ROW 1 ── -->
+  <g transform="translate(80,297)">
+    <g class="pill" transform="translate(0,0)">   <rect width="146" height="30" rx="15" fill="rgba(124,58,237,0.12)"  stroke="rgba(124,58,237,0.4)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#7C3AED"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Machine Learning</text></g>
+    <g class="pill" transform="translate(154,0)">  <rect width="80"  height="30" rx="15" fill="rgba(34,211,238,0.10)"  stroke="rgba(34,211,238,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#22D3EE"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Python</text></g>
+    <g class="pill" transform="translate(242,0)">  <rect width="64"  height="30" rx="15" fill="rgba(16,185,129,0.10)"  stroke="rgba(16,185,129,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#10B981"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">C++</text></g>
+    <g class="pill" transform="translate(314,0)">  <rect width="226" height="30" rx="15" fill="rgba(245,158,11,0.10)"  stroke="rgba(245,158,11,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F59E0B"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Structures &amp; Algorithms</text></g>
+    <g class="pill" transform="translate(548,0)">  <rect width="186" height="30" rx="15" fill="rgba(236,72,153,0.10)"  stroke="rgba(236,72,153,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EC4899"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Competitive Programming</text></g>
+    <g class="pill" transform="translate(742,0)">  <rect width="136" height="30" rx="15" fill="rgba(59,130,246,0.10)"  stroke="rgba(59,130,246,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#3B82F6"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Problem Solving</text></g>
+    <g class="pill" transform="translate(886,0)">  <rect width="110" height="30" rx="15" fill="rgba(16,185,129,0.10)"  stroke="rgba(16,185,129,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#10B981"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Science</text></g>
+  </g>
+
+  <!-- ── ROW 2 ── -->
+  <g transform="translate(80,335)">
+    <g class="pill" transform="translate(0,0)">   <rect width="100" height="30" rx="15" fill="rgba(249,115,22,0.10)"  stroke="rgba(249,115,22,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F97316"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Scikit-learn</text></g>
+    <g class="pill" transform="translate(108,0)">  <rect width="80"  height="30" rx="15" fill="rgba(139,92,246,0.10)"  stroke="rgba(139,92,246,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#8B5CF6"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Pandas</text></g>
+    <g class="pill" transform="translate(196,0)">  <rect width="78"  height="30" rx="15" fill="rgba(6,182,212,0.10)"   stroke="rgba(6,182,212,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#06B6D4"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">NumPy</text></g>
+    <g class="pill" transform="translate(282,0)">  <rect width="140" height="30" rx="15" fill="rgba(234,179,8,0.10)"   stroke="rgba(234,179,8,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EAB308"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Data Visualization</text></g>
+    <g class="pill" transform="translate(430,0)">  <rect width="66"  height="30" rx="15" fill="rgba(236,72,153,0.10)"  stroke="rgba(236,72,153,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#EC4899"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">EDA</text></g>
+    <g class="pill" transform="translate(504,0)">  <rect width="110" height="30" rx="15" fill="rgba(244,63,94,0.10)"   stroke="rgba(244,63,94,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#F43F5E"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Git &amp; GitHub</text></g>
+    <g class="pill" transform="translate(622,0)">  <rect width="90"  height="30" rx="15" fill="rgba(255,75,75,0.10)"   stroke="rgba(255,75,75,0.35)"  stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#FF4B4B"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Streamlit</text></g>
+    <g class="pill" transform="translate(720,0)">  <rect width="66"  height="30" rx="15" fill="rgba(99,102,241,0.10)"  stroke="rgba(99,102,241,0.35)" stroke-width="1"/><circle cx="15" cy="15" r="4" fill="#6366F1"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">OOP</text></g>
+    <g class="pill" transform="translate(794,0)" filter="url(#pillGlow)"><rect width="110" height="30" rx="15" fill="rgba(124,58,237,0.22)" stroke="rgba(124,58,237,0.7)" stroke-width="1.2"/><circle cx="15" cy="15" r="4" fill="#a78bfa"/><text x="26" y="19.5" font-family="'Inter',system-ui,sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">Antigravity</text></g>
+  </g>
+
+  <!-- ══ DIVIDER ══ -->
+  <line x1="80" y1="380" x2="1100" y2="380" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STATS CARDS
+  ═══════════════════════════════════════════════════════ -->
+  <g transform="translate(80,396)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.6s" fill="freeze"/>
+
+    <g transform="translate(0,0)">
+      <rect width="248" height="78" rx="12" fill="rgba(124,58,237,0.10)" stroke="rgba(124,58,237,0.28)" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#7C3AED" letter-spacing="1">COMPETITIVE PROG.</text>
+      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">LeetCode</text>
+      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Codeforces · GeeksforGeeks</text>
+    </g>
+
+    <g transform="translate(264,0)">
+      <rect width="248" height="78" rx="12" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.22)" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#22D3EE" letter-spacing="1">DATA SCIENCE</text>
+      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Scikit · Pandas</text>
+      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">NumPy · Matplotlib · Seaborn</text>
+    </g>
+
+    <g transform="translate(528,0)">
+      <rect width="248" height="78" rx="12" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.22)" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#10B981" letter-spacing="1">DEVELOPMENT</text>
+      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Python · C++</text>
+      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Streamlit · Git · OOP</text>
+    </g>
+
+    <g transform="translate(792,0)" filter="url(#pillGlow)">
+      <rect width="248" height="78" rx="12" fill="rgba(167,139,250,0.10)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#a78bfa" letter-spacing="1">AI TOOLING</text>
+      <text x="15" y="48" font-family="'Inter',system-ui,sans-serif" font-size="22" font-weight="800" fill="#F1F5F9">Antigravity</text>
+      <text x="15" y="67" font-family="'Inter',system-ui,sans-serif" font-size="11" fill="#64748B">Agentic AI · Google DeepMind</text>
+    </g>
+  </g>
+
+  <!-- ══ DIVIDER ══ -->
+  <line x1="80" y1="490" x2="1100" y2="490" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SOCIAL BUTTONS
+  ═══════════════════════════════════════════════════════ -->
+  <text x="80" y="512" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#475569" letter-spacing="2">// CONNECT WITH ME</text>
+
+  <g transform="translate(80,522)">
+
+    <!-- GitHub -->
+    <a href="https://github.com/mudit-1711" target="_blank">
+      <g class="soc">
+        <rect width="196" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+        <path d="M14 8C8.48 8 4 12.48 4 18c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0114 10.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.02 10.02 0 0024 18c0-5.52-4.48-10-10-10z" fill="#F8FAFC" transform="translate(10,10) scale(0.73)"/>
+        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">GitHub</text>
+        <text x="97" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-1711</text>
+      </g>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mudit-agrawal17" target="_blank">
+      <g class="soc" transform="translate(210,0)">
+        <rect width="220" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+        <rect x="10" y="11" width="20" height="20" rx="4" fill="#0A66C2" opacity="0.9"/>
+        <text x="10" y="26" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle" transform="translate(10,0)">in</text>
+        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">LinkedIn</text>
+        <text x="103" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit-agrawal17</text>
+      </g>
+    </a>
+
+    <!-- Codolio -->
+    <a href="https://codolio.com/profile/mudit_1711" target="_blank">
+      <g class="soc" transform="translate(444,0)">
+        <rect width="210" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,11) scale(0.83)"/>
+        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">Codolio</text>
+        <text x="98" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit_1711</text>
+      </g>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:muditagrawal06@gmail.com" target="_blank">
+      <g class="soc" transform="translate(668,0)">
+        <rect width="254" height="42" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+        <rect x="10" y="13" width="20" height="14" rx="2" fill="none" stroke="#EA4335" stroke-width="1.7"/>
+        <path d="M10 16 L20 22 L30 16" fill="none" stroke="#EA4335" stroke-width="1.6"/>
+        <text x="40" y="26" font-family="'Inter',system-ui,sans-serif" font-size="12.5" font-weight="700" fill="#E2E8F0">Email</text>
+        <text x="78" y="26" font-family="'Fira Code',monospace" font-size="10" fill="#475569">muditagrawal06@gmail.com</text>
+      </g>
+    </a>
+  </g>
+
+  <!-- ══ SIGNATURE ══ -->
+  <text x="1100" y="578" font-family="'Fira Code',monospace" font-size="10" fill="#1e293b" text-anchor="end">made with ❤️ by Mudit Agrawal · IIIT Bhopal</text>
+
 </svg>
