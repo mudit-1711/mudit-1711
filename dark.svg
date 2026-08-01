@@ -222,28 +222,28 @@
   <rect x="80" y="212" width="255" height="3"  rx="1.5" fill="#f59e0b" opacity=".85"/>
   <text x="207" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#f59e0b" text-anchor="middle" letter-spacing=".5">Questions Solved</text>
   <line x1="100" y1="238" x2="314" y2="238" stroke="rgba(245,158,11,.2)" stroke-width="1"/>
-  <text x="207" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">1647</text>
+  <text x="207" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">1600+</text>
 
   <!-- Stat 2: Active Days CP -->
   <rect x="353" y="212" width="255" height="70" rx="13" fill="rgba(16,185,129,.09)" stroke="rgba(16,185,129,.32)" stroke-width="1"/>
   <rect x="353" y="212" width="255" height="3"  rx="1.5" fill="#10b981" opacity=".85"/>
   <text x="480" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#10b981" text-anchor="middle" letter-spacing=".5">Active Days</text>
   <line x1="373" y1="238" x2="587" y2="238" stroke="rgba(16,185,129,.2)" stroke-width="1"/>
-  <text x="480" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">285</text>
+  <text x="480" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">285+</text>
 
   <!-- Stat 3: Contributions -->
   <rect x="626" y="212" width="255" height="70" rx="13" fill="rgba(124,58,237,.09)" stroke="rgba(124,58,237,.32)" stroke-width="1"/>
   <rect x="626" y="212" width="255" height="3"  rx="1.5" fill="#7c3aed" opacity=".85"/>
   <text x="753" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing=".5">Contributions</text>
   <line x1="646" y1="238" x2="860" y2="238" stroke="rgba(124,58,237,.2)" stroke-width="1"/>
-  <text x="753" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">306</text>
+  <text x="753" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">300+</text>
 
   <!-- Stat 4: Coding Days -->
   <rect x="899" y="212" width="255" height="70" rx="13" fill="rgba(34,211,238,.09)" stroke="rgba(34,211,238,.32)" stroke-width="1"/>
   <rect x="899" y="212" width="255" height="3"  rx="1.5" fill="#22d3ee" opacity=".85"/>
   <text x="1026" y="233" font-family="'Fira Code',monospace" font-size="10" font-weight="700" fill="#22d3ee" text-anchor="middle" letter-spacing=".5">Coding Days</text>
   <line x1="919" y1="238" x2="1133" y2="238" stroke="rgba(34,211,238,.2)" stroke-width="1"/>
-  <text x="1026" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">79</text>
+  <text x="1026" y="270" font-family="'Inter',system-ui,sans-serif" font-size="34" font-weight="900" fill="#f1f5f9" text-anchor="middle">75+</text>
 
 </g>
 
