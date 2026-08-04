@@ -74,12 +74,11 @@
 ### 📊 GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mudit-1711&show_icons=true&hide_rank=true&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&border_radius=12&cache_seconds=1800" alt="Mudit's GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mudit-1711&hide_progress=true&hide=percentage&langs_count=8&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="48%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mudit-1711&show_icons=true&hide_rank=true&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&border_radius=12&cache_seconds=1800" alt="Mudit's GitHub Stats" width="98%" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=mudit-1711&theme=synthwave&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&border_radius=12&cache_seconds=1800" alt="GitHub Streak & Active Days" width="98%" />
+  <img src="https://img.shields.io/badge/Languages_Used-HTML_•_Jupyter_Notebook_•_C%2B%2B_•_Python_•_JavaScript-22D3EE?style=for-the-badge&labelColor=0F172A&color=7C3AED" alt="Languages Used" />
 </p>
 
 <p align="center">
