@@ -74,8 +74,8 @@
 ### 📊 GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mudit-1711&show_icons=true&include_all_commits=true&hide_rank=true&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&border_radius=12&cache_seconds=1800" alt="Mudit's GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mudit-1711&hide_progress=true&langs_count=8&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="48%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mudit-1711&show_icons=true&hide_rank=true&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&border_radius=12&cache_seconds=1800" alt="Mudit's GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mudit-1711&hide_progress=true&hide=percentage&langs_count=8&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="48%" />
 </p>
 
 <p align="center">
