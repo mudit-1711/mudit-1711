@@ -52,8 +52,13 @@
 
 #### 🤖 Machine Learning & Data Science
 <p align="left">
+  <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
+  <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
+  <img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
+  <img src="https://img.shields.io/badge/EDA-10B981?style=for-the-badge&logo=plotly&logoColor=white" alt="Exploratory Data Analysis" />
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/pandas--profiling-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas-profiling" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
@@ -68,6 +73,47 @@
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
 </p>
+
+---
+
+### 🚀 Featured Projects
+
+> A glimpse of what I've been building — explore more on my **[GitHub →](https://github.com/mudit-1711?tab=repositories)**
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>
+      <p>A real-time facial emotion recognition system that classifies human emotions from images using deep learning models.</p>
+      <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h4>❤️ <a href="https://github.com/mudit-1711/heart-health-predictor">Heart Health Predictor</a></h4>
+      <p>An ML-powered web app that predicts the risk of heart disease based on clinical health parameters.</p>
+      <a href="https://github.com/mudit-1711/heart-health-predictor">
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🚗 <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">Ford Car Price Prediction</a></h4>
+      <p>A regression model that predicts Ford used-car prices using EDA, feature engineering, and machine learning pipelines.</p>
+      <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>
+      <p>An intelligent route recommendation system that suggests optimal paths based on user preferences and traffic patterns.</p>
+      <a href="https://github.com/mudit-1711/route-recommendation-model">
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
