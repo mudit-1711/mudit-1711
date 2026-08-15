@@ -50,7 +50,7 @@
   <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=codeforces&logoColor=white" alt="OOP" />
 </p>
 
-#### 🤖 Machine Learning & Data Science
+#### 🤖 AI, Machine Learning & Data Science
 <p align="left">
   <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
   <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
@@ -84,7 +84,7 @@
   <tr>
     <td width="50%" valign="top">
       <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>
-      <p>A real-time facial emotion recognition system that classifies human emotions from images using deep learning models.</p>
+      <p>A real-time facial emotion recognition system that classifies human emotions from images using Machine learning models.</p>
       <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
@@ -107,7 +107,7 @@
     </td>
     <td width="50%" valign="top">
       <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>
-      <p>An intelligent route recommendation system that suggests optimal paths based on user preferences and traffic patterns.</p>
+      <p>An intelligent route recommendation system that suggests optimal paths based on user preferences .</p>
       <a href="https://github.com/mudit-1711/route-recommendation-model">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
