@@ -84,7 +84,7 @@
   <tr>
     <td width="50%" valign="top">
       <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>
-      <p>A real-time facial emotion recognition system that classifies human emotions from images using Machine learning models.</p>
+      <p>A Emotify is an interactive Natural Language Processing (NLP) web application that detects the underlying emotions in text in real-time.</p>
       <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
@@ -107,7 +107,7 @@
     </td>
     <td width="50%" valign="top">
       <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>
-      <p>An intelligent route recommendation system that suggests optimal paths based on user preferences .</p>
+      <p>An intelligent route recommendation system that suggests optimal paths and modes of transport based on user preferences .</p>
       <a href="https://github.com/mudit-1711/route-recommendation-model">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
