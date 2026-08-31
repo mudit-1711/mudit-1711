@@ -142,11 +142,6 @@
 
 ### 📊 GitHub Metrics
 
-<!-- GitHub Metrics Card (contains Stats, Languages, and Contribution Graph) -->
-<p align="center">
-  <img src="github-metrics.svg" alt="Mudit's GitHub Metrics" width="480px" />
-</p>
-
 <!-- GitHub Streak Stats: Current & Max Streak -->
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak" width="495px" />
