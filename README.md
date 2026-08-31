@@ -43,11 +43,15 @@
 
 #### 💻 Programming Languages & Core
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/DSA-7C3AED?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="DSA" />
-  <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=codeforces&logoColor=white" alt="OOP" />
+  <<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=cplusplus&logoColor=white" alt="OOP" />
+  <img src="https://img.shields.io/badge/STL-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="STL" />
+  <img src="https://img.shields.io/badge/DSA-7C3AED?style=for-the-badge&logo=thealgorithms&logoColor=white" alt="DSA" />
+  <img src="https://img.shields.io/badge/Problem_Solving-00A67E?style=for-the-badge&logo=leetcode&logoColor=white" alt="Problem Solving" />
+  <img src="https://img.shields.io/badge/Competitive_Programming-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Competitive Programming" />
 </p>
 
 #### 🤖 AI, Machine Learning & Data Science
