@@ -76,8 +76,6 @@
 
 #### ⚙️ Developer Tools & AI Technologies
 <p align="left">
-  #### ⚙️ Developer Tools & AI Technologies
-<p align="left">
   <img src="https://img.shields.io/badge/Antigravity-7C3AED?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
   <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
