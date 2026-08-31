@@ -85,6 +85,7 @@
 
   <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Workbench" />
   <img src="https://img.shields.io/badge/Logisim-8B5CF6?style=for-the-badge&logo=logicmonitor&logoColor=white" alt="Logisim" />
+  <img src="https://img.shields.io/badge/Hopscotch-FF6B35?style=for-the-badge&logo=hopscotch&logoColor=white" alt="Hopscotch" />
 
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
   <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
