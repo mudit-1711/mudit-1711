@@ -154,7 +154,7 @@
 
 <!-- Contribution Graph -->
 <p align="center">
-  <img src="https://ghchart.rshah.org/d70f00/mudit-1711" alt="Mudit's Contribution Graph" />
+  <img src="https://ghchart.rshah.org/18f85d/mudit-1711" alt="Mudit's Contribution Graph" />
 </p>
 
 ---
