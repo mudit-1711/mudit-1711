@@ -4,7 +4,7 @@
 
 ---
 
-### 📈 Live Competitive Programming Stats
+### 📈 Live DSA & Competitive Programming Stats
 
 <p align="center">
   <a href="https://leetcode.com/mudit_1711" target="_blank">
