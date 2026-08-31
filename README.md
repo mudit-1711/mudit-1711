@@ -52,8 +52,6 @@
 
 #### 🤖 AI, Machine Learning & Data Science
 <p align="left">
-  ### 🤖 AI, Machine Learning & Data Science
-
   <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
   <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
   <img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
