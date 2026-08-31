@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 430" width="1180" height="430">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 370" width="1180" height="370">
 <defs>
   <!-- Backgrounds -->
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -138,12 +138,12 @@
 </circle>
 
 <!-- ── OUTER BORDER ── -->
-<rect x="6" y="6" width="1168" height="418" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1.5"/>
+<rect x="6" y="6" width="1168" height="358" rx="18" fill="none" stroke="url(#shimmer)" stroke-width="1.5"/>
 
 <!-- ── MAIN PANEL ── -->
-<rect x="26" y="24" width="1128" height="384" rx="16" fill="url(#panel)" filter="url(#drop)"/>
+<rect x="26" y="24" width="1128" height="324" rx="16" fill="url(#panel)" filter="url(#drop)"/>
 <rect x="26" y="24" width="1128" height="90"  rx="16" fill="url(#glassTop)"/>
-<rect x="26" y="24" width="1128" height="384" rx="16" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
+<rect x="26" y="24" width="1128" height="324" rx="16" fill="none" stroke="url(#shimmer)" stroke-width="1"/>
 
 <!-- ── TERMINAL HEADER ── -->
 <rect x="26" y="24" width="1128" height="38" rx="16" fill="rgba(5,10,20,.9)"/>
@@ -157,7 +157,7 @@
 
 <!-- ── SCANLINE ── -->
 <rect x="26" y="62" width="1128" height="26" fill="url(#scan)">
-  <animate attributeName="y" values="62;402;62" dur="4.5s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="62;342;62" dur="4.5s" repeatCount="indefinite"/>
 </rect>
 
 <!-- ══════════════════════════════════════════
@@ -212,44 +212,11 @@
 <line x1="80" y1="196" x2="1100" y2="196" stroke="url(#divGrad)" stroke-width="1"/>
 
 <!-- ══════════════════════════════════════════
-     SECTION 2 — SKILLS
-══════════════════════════════════════════ -->
-<text x="80" y="218" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="2">// SKILLS &amp; TECHNOLOGIES</text>
-
-<!-- Row 1 -->
-<g transform="translate(80,228)">
-  <g class="pill"><rect x="0"   y="0" width="146" height="28" rx="14" fill="rgba(124,58,237,.12)" stroke="rgba(124,58,237,.4)"  stroke-width="1"/><circle cx="14" cy="14" r="3.5" fill="#7c3aed"/><text x="24" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Machine Learning</text></g>
-  <g class="pill"><rect x="153" y="0" width="76"  height="28" rx="14" fill="rgba(34,211,238,.10)" stroke="rgba(34,211,238,.35)" stroke-width="1"/><circle cx="167" cy="14" r="3.5" fill="#22d3ee"/><text x="177" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Python</text></g>
-  <g class="pill"><rect x="236" y="0" width="60"  height="28" rx="14" fill="rgba(16,185,129,.10)" stroke="rgba(16,185,129,.35)" stroke-width="1"/><circle cx="250" cy="14" r="3.5" fill="#10b981"/><text x="260" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">C++</text></g>
-  <g class="pill"><rect x="303" y="0" width="222" height="28" rx="14" fill="rgba(245,158,11,.10)" stroke="rgba(245,158,11,.35)" stroke-width="1"/><circle cx="317" cy="14" r="3.5" fill="#f59e0b"/><text x="327" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Structures &amp; Algorithms</text></g>
-  <g class="pill"><rect x="532" y="0" width="186" height="28" rx="14" fill="rgba(236,72,153,.10)" stroke="rgba(236,72,153,.35)" stroke-width="1"/><circle cx="546" cy="14" r="3.5" fill="#ec4899"/><text x="556" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Competitive Programming</text></g>
-  <g class="pill"><rect x="725" y="0" width="108" height="28" rx="14" fill="rgba(59,130,246,.10)" stroke="rgba(59,130,246,.35)" stroke-width="1"/><circle cx="739" cy="14" r="3.5" fill="#3b82f6"/><text x="749" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Science</text></g>
-  <g class="pill"><rect x="840" y="0" width="130" height="28" rx="14" fill="rgba(16,185,129,.10)" stroke="rgba(16,185,129,.35)" stroke-width="1"/><circle cx="854" cy="14" r="3.5" fill="#10b981"/><text x="864" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Problem Solving</text></g>
-</g>
-
-<!-- Row 2 -->
-<g transform="translate(80,264)">
-  <g class="pill"><rect x="0"   y="0" width="99"  height="28" rx="14" fill="rgba(249,115,22,.10)" stroke="rgba(249,115,22,.35)" stroke-width="1"/><circle cx="14"  cy="14" r="3.5" fill="#f97316"/><text x="24"  y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Scikit-learn</text></g>
-  <g class="pill"><rect x="106" y="0" width="76"  height="28" rx="14" fill="rgba(139,92,246,.10)" stroke="rgba(139,92,246,.35)" stroke-width="1"/><circle cx="120" cy="14" r="3.5" fill="#8b5cf6"/><text x="130" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Pandas</text></g>
-  <g class="pill"><rect x="189" y="0" width="74"  height="28" rx="14" fill="rgba(6,182,212,.10)"  stroke="rgba(6,182,212,.35)"  stroke-width="1"/><circle cx="203" cy="14" r="3.5" fill="#06b6d4"/><text x="213" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">NumPy</text></g>
-  <g class="pill"><rect x="270" y="0" width="137" height="28" rx="14" fill="rgba(234,179,8,.10)"  stroke="rgba(234,179,8,.35)"  stroke-width="1"/><circle cx="284" cy="14" r="3.5" fill="#eab308"/><text x="294" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Data Visualization</text></g>
-  <g class="pill"><rect x="414" y="0" width="62"  height="28" rx="14" fill="rgba(236,72,153,.10)" stroke="rgba(236,72,153,.35)" stroke-width="1"/><circle cx="428" cy="14" r="3.5" fill="#ec4899"/><text x="438" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">EDA</text></g>
-  <g class="pill"><rect x="483" y="0" width="108" height="28" rx="14" fill="rgba(244,63,94,.10)"  stroke="rgba(244,63,94,.35)"  stroke-width="1"/><circle cx="497" cy="14" r="3.5" fill="#f43f5e"/><text x="507" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Git &amp; GitHub</text></g>
-  <g class="pill"><rect x="598" y="0" width="86"  height="28" rx="14" fill="rgba(255,75,75,.10)"  stroke="rgba(255,75,75,.35)"  stroke-width="1"/><circle cx="612" cy="14" r="3.5" fill="#ff4b4b"/><text x="622" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">Streamlit</text></g>
-  <g class="pill"><rect x="691" y="0" width="62"  height="28" rx="14" fill="rgba(99,102,241,.10)" stroke="rgba(99,102,241,.35)" stroke-width="1"/><circle cx="705" cy="14" r="3.5" fill="#6366f1"/><text x="715" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">OOP</text></g>
-  <!-- Antigravity - glows special -->
-  <g class="pill" filter="url(#pg)"><rect x="760" y="0" width="108" height="28" rx="14" fill="rgba(124,58,237,.22)" stroke="rgba(167,139,250,.75)" stroke-width="1.2"/><circle cx="774" cy="14" r="3.5" fill="#a78bfa"/><text x="784" y="18.5" font-family="'Inter',system-ui,sans-serif" font-size="11.5" font-weight="700" fill="#c4b5fd">Antigravity</text></g>
-</g>
-
-<!-- ── DIVIDER 2 ── -->
-<line x1="80" y1="305" x2="1100" y2="305" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-
-<!-- ══════════════════════════════════════════
      SECTION 3 — SOCIAL LINKS
 ══════════════════════════════════════════ -->
-<text x="80" y="325" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#334155" letter-spacing="2">// CONNECT</text>
+<text x="80" y="218" font-family="'Fira Code',monospace" font-size="11" font-weight="700" fill="#334155" letter-spacing="2">// CONNECT</text>
 
-<g transform="translate(80,335)">
+<g transform="translate(80,228)">
 
   <!-- GitHub -->
   <a href="https://github.com/mudit-1711" target="_blank">
@@ -293,9 +260,19 @@
     </g>
   </a>
 
+  <!-- Kaggle -->
+  <a href="https://www.kaggle.com/mudit1711" target="_blank">
+    <g class="soc" transform="translate(922,0)">
+      <rect width="180" height="38" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)" stroke-width="1"/>
+      <path d="M11.573 20.893l-4.524-5.753L1.082 23.477h4.156l2.97-3.784 2.971 3.784h4.156l-3.762-4.787 3.762-4.787H8.208l-2.97 3.783L2.268 11.319H.5v12.181h3.139v-4.469l4.524 5.753h3.41zM23.5 11.319h-3.139v12.181H23.5V11.319zm-3.139-4.787h3.139V0h-3.139v6.532z" fill="#20beff" transform="translate(11,9) scale(.8)"/>
+      <text x="40"  y="24" font-family="'Inter',system-ui,sans-serif" font-size="13" font-weight="700" fill="#e2e8f0">Kaggle</text>
+      <text x="96"  y="24" font-family="'Fira Code',monospace" font-size="10" fill="#475569">mudit1711</text>
+    </g>
+  </a>
+
 </g>
 
 <!-- ── FOOTER ── -->
-<text x="1100" y="418" font-family="'Fira Code',monospace" font-size="9.5" fill="#1e293b" text-anchor="end">crafted with ❤️  ·  Mudit Agrawal  ·  IIIT Bhopal</text>
+<text x="1100" y="311" font-family="'Fira Code',monospace" font-size="9.5" fill="#1e293b" text-anchor="end">crafted with ❤️  ·  Mudit Agrawal  ·  IIIT Bhopal</text>
 
 </svg>

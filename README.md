@@ -119,24 +119,14 @@
 
 ### 📊 GitHub Metrics
 
-<!-- GitHub Stats: Total Contributions -->
+<!-- GitHub Metrics Card (contains Stats, Languages, and Contribution Graph) -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mudit-1711&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&border_radius=12&cache_seconds=1800" alt="Mudit's GitHub Stats" width="98%" />
+  <img src="github-metrics.svg" alt="Mudit's GitHub Metrics" width="480px" />
 </p>
 
 <!-- GitHub Streak Stats: Current & Max Streak -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak" width="98%" />
-</p>
-
-<!-- Languages Used (names only, no percentage) -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="98%" />
-</p>
-
-<!-- Contribution Graph (unchanged) -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mudit-1711&theme=react-dark&bg_color=0F172A&color=22D3EE&line=7C3AED&point=22D3EE&area=true&hide_border=true" alt="Contribution Graph" width="98%" />
+  <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak" width="495px" />
 </p>
 
 ---
@@ -154,6 +144,10 @@
   &nbsp;&nbsp;
   <a href="https://codolio.com/profile/mudit_1711">
     <img src="https://img.shields.io/badge/Codolio-10B981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codolio" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.kaggle.com/mudit1711">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
   </a>
   &nbsp;&nbsp;
   <a href="mailto:muditagrawal06@gmail.com">
