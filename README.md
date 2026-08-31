@@ -4,7 +4,7 @@
 
 ---
 
-### 📈 Live Competitive Programming Stats
+### 📈 Live DSA & Competitive Programming Stats
 
 <p align="center">
   <a href="https://leetcode.com/mudit_1711" target="_blank">
@@ -44,34 +44,57 @@
 #### 💻 Programming Languages & Core
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/DSA-7C3AED?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="DSA" />
-  <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=codeforces&logoColor=white" alt="OOP" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/DBMS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="DBMS" />
+  <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=cplusplus&logoColor=white" alt="OOP" />
+  <img src="https://img.shields.io/badge/STL-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="STL" />
+  <img src="https://img.shields.io/badge/DSA-7C3AED?style=for-the-badge&logo=thealgorithms&logoColor=white" alt="DSA" />
+  <img src="https://img.shields.io/badge/Problem_Solving-00A67E?style=for-the-badge&logo=leetcode&logoColor=white" alt="Problem Solving" />
+  <img src="https://img.shields.io/badge/Competitive_Programming-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Competitive Programming" />
 </p>
 
-#### 🤖 Machine Learning & Data Science
+#### 🤖 AI, Machine Learning & Data Science
 <p align="left">
   <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
   <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
   <img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
   <img src="https://img.shields.io/badge/EDA-10B981?style=for-the-badge&logo=plotly&logoColor=white" alt="Exploratory Data Analysis" />
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/XGBoost-2E7D32?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/pandas--profiling-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas-profiling" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Seaborn-4FC3F7?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/Plotly-636EFA?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
-  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/Pandas_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Profiling" />
 </p>
 
 #### ⚙️ Developer Tools & AI Technologies
 <p align="left">
   <img src="https://img.shields.io/badge/Antigravity-7C3AED?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
+  <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+
+  <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Workbench" />
+  <img src="https://img.shields.io/badge/Logisim-8B5CF6?style=for-the-badge&logo=logicmonitor&logoColor=white" alt="Logisim" />
+  <img src="https://img.shields.io/badge/Hopscotch-FF6B35?style=for-the-badge&logo=hopscotch&logoColor=white" alt="Hopscotch" />
+
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+  <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
+
+  <img src="https://img.shields.io/badge/ChatGPT-412991?style=for-the-badge&logo=openai&logoColor=white" alt="ChatGPT" />
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini" />
+  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+</p>
 </p>
 
 ---
@@ -84,7 +107,7 @@
   <tr>
     <td width="50%" valign="top">
       <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>
-      <p>A real-time facial emotion recognition system that classifies human emotions from images using deep learning models.</p>
+      <p>A Emotify is an interactive Natural Language Processing (NLP) web application that detects the underlying emotions in text in real-time.</p>
       <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
@@ -107,7 +130,7 @@
     </td>
     <td width="50%" valign="top">
       <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>
-      <p>An intelligent route recommendation system that suggests optimal paths based on user preferences and traffic patterns.</p>
+      <p>An intelligent route recommendation system that suggests optimal paths and modes of transport based on user preferences .</p>
       <a href="https://github.com/mudit-1711/route-recommendation-model">
         <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
       </a>
