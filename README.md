@@ -52,29 +52,23 @@
 
 #### 🤖 AI, Machine Learning & Data Science
 <p align="left">
+  ### 🤖 AI, Machine Learning & Data Science
+
   <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
-<img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
-<img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
-<img src="https://img.shields.io/badge/EDA-10B981?style=for-the-badge&logo=plotly&logoColor=white" alt="Exploratory Data Analysis" />
-
-<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
-<img src="https://img.shields.io/badge/XGBoost-2E7D32?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
-<img src="https://img.shields.io/badge/LightGBM-7CB342?style=for-the-badge&logo=lightgbm&logoColor=white" alt="LightGBM" />
-<img src="https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge&logo=catboost&logoColor=black" alt="CatBoost" />
-
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
-
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-<img src="https://img.shields.io/badge/SciPy-0C55A5?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy" />
-
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
-<img src="https://img.shields.io/badge/Seaborn-4FC3F7?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
-<img src="https://img.shields.io/badge/Plotly-636EFA?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
-
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-<img src="https://img.shields.io/badge/Pandas_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Profiling" />
+  <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
+  <img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
+  <img src="https://img.shields.io/badge/EDA-10B981?style=for-the-badge&logo=plotly&logoColor=white" alt="Exploratory Data Analysis" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/XGBoost-2E7D32?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Seaborn-4FC3F7?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/Plotly-636EFA?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Pandas_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Profiling" />
 </p>
 
 #### ⚙️ Developer Tools & AI Technologies
