@@ -47,6 +47,7 @@
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/DBMS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="DBMS" />
   <img src="https://img.shields.io/badge/OOP-22D3EE?style=for-the-badge&logo=cplusplus&logoColor=white" alt="OOP" />
   <img src="https://img.shields.io/badge/STL-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="STL" />
   <img src="https://img.shields.io/badge/DSA-7C3AED?style=for-the-badge&logo=thealgorithms&logoColor=white" alt="DSA" />
