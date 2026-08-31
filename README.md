@@ -71,7 +71,7 @@
   <img src="https://img.shields.io/badge/Seaborn-4FC3F7?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
   <img src="https://img.shields.io/badge/Plotly-636EFA?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/Pandas_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Profiling" />
+  <img src="https://img.shields.io/badge/Ydata_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Ydata-profiling" />
 </p>
 
 #### ⚙️ Developer Tools & AI Technologies
