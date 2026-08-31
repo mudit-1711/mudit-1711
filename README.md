@@ -147,6 +147,16 @@
   <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak" width="495px" />
 </p>
 
+<!-- Languages Used (names only, no percentage) -->
+<p align="center">
+  <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px" />
+</p>
+
+<!-- Contribution Graph -->
+<p align="center">
+  <img src="https://ghchart.rshah.org/22D3EE/mudit-1711" alt="Mudit's Contribution Graph" />
+</p>
+
 ---
 
 ### 📬 Connect & Collaborate
