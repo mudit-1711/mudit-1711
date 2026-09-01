@@ -149,7 +149,7 @@
 
 <!-- Languages Used (names only, no percentage) -->
 <p align="center">
-  <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px" />
 </p>
 
 <!-- Contribution Graph -->
