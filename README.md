@@ -155,6 +155,7 @@
   </tr>  
 </table>
 
+---
 
 ### 📊 GitHub Metrics
 
