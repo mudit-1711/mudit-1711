@@ -100,44 +100,60 @@
 ---
 
 ### 🚀 Featured Projects
+> A glimpse of what I've been building — explore more on my GitHub →
 
-> A glimpse of what I've been building — explore more on my **[GitHub →](https://github.com/mudit-1711?tab=repositories)**
+<table width="100%">  
+  <tr>  
+    <td width="50%" valign="top">  
+      <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>  
+      <p>An interactive Natural Language Processing (NLP) web application that detects underlying emotions in text in real-time.</p>  
+      <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+    <td width="50%" valign="top">  
+      <h4>❤️ <a href="https://github.com/mudit-1711/heart-health-predictor">Heart Health Predictor</a></h4>  
+      <p>An ML-powered web app that predicts the risk of heart disease based on clinical health parameters.</p>  
+      <a href="https://github.com/mudit-1711/heart-health-predictor">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+  </tr>  
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🎭 <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">Emotify — Emotion Predictor</a></h4>
-      <p>A Emotify is an interactive Natural Language Processing (NLP) web application that detects the underlying emotions in text in real-time.</p>
-      <a href="https://github.com/mudit-1711/Emotify---Emotion-Predictor">
-        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <h4>❤️ <a href="https://github.com/mudit-1711/heart-health-predictor">Heart Health Predictor</a></h4>
-      <p>An ML-powered web app that predicts the risk of heart disease based on clinical health parameters.</p>
-      <a href="https://github.com/mudit-1711/heart-health-predictor">
-        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🚗 <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">Ford Car Price Prediction</a></h4>
-      <p>A regression model that predicts Ford used-car prices using EDA, feature engineering, and machine learning pipelines.</p>
-      <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">
-        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>
-      <p>An intelligent route recommendation system that suggests optimal paths and modes of transport based on user preferences .</p>
-      <a href="https://github.com/mudit-1711/route-recommendation-model">
-        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-      </a>
-    </td>
-  </tr>
+  <tr>  
+    <td width="50%" valign="top">  
+      <h4>🚗 <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">Ford Car Price Prediction</a></h4>  
+      <p>A regression model that predicts Ford used-car prices using EDA, feature engineering, and machine learning pipelines.</p>  
+      <a href="https://github.com/mudit-1711/Ford-_Car_Price_Prediction">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+    <td width="50%" valign="top">  
+      <h4>🧠 <a href="https://github.com/mudit-1711/Mental-Health-Score-Model">Mental Health Score Predictor</a></h4>  
+      <p>An end-to-end ML project predicting student well-being scores using behavioral and lifestyle features with preprocessing, feature engineering, and Random Forest regression.</p>  
+      <a href="https://github.com/mudit-1711/Mental-Health-Score-Model">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+  </tr>  
+
+  <tr>  
+    <td width="50%" valign="top">  
+      <h4>✍️ <a href="https://github.com/mudit-1711/Deep_learning/tree/main/handwritten_digit_recognition_model">Handwritten Digit Recognition</a></h4>  
+      <p>A deep learning project using ANN and CNN models to recognize handwritten digits (0–9) from MNIST, with a 99.48% CNN test accuracy.</p>  
+      <a href="https://github.com/mudit-1711/Deep_learning/tree/main/handwritten_digit_recognition_model">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+    <td width="50%" valign="top">  
+      <h4>🗺️ <a href="https://github.com/mudit-1711/route-recommendation-model">Route Recommendation Model</a></h4>  
+      <p>An intelligent route recommendation system that suggests optimal paths and modes of transport based on user preferences.</p>  
+      <a href="https://github.com/mudit-1711/route-recommendation-model">  
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" />  
+      </a>  
+    </td>  
+  </tr>  
 </table>
-
 ---
 
 ### 📊 GitHub Metrics
