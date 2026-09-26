@@ -158,16 +158,27 @@
 ---
 
 ### 📊 GitHub Metrics
+<!-- GitHub Stats & Streak -->
+<div align="center">
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.shion.dev/api?username=mudit-1711&theme=default&hide_border=true&include_all_commits=true&count_private=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&ring_color=7C3AED" alt="GitHub Stats"/>
+    </td>
+    <td>
+      <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak"/>
+    </td>
+  </tr>
+</table>
 
-<!-- GitHub Streak Stats: Current & Max Streak -->
+<br>
+
+<!-- Languages Used -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak" width="495px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=dark&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px"/>
 </p>
 
-<!-- Languages Used (names only, no percentage) -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=synthwave&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px" />
-</p>
+</div>
 
 <!-- Contribution Graph -->
 <p align="center">
