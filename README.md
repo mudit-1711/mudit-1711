@@ -156,55 +156,89 @@
 </table>
 
 ### 📊 GitHub Metrics
-
 <!-- GitHub Stats & Streak -->
 <div align="center">
+
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.shion.dev/api?username=mudit-1711&theme=default&hide_border=true&include_all_commits=true&count_private=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&ring_color=7C3AED" alt="GitHub Stats"/>
+      <img
+        src="https://github-readme-stats.shion.dev/api?username=mudit-1711&theme=default&hide_border=true&include_all_commits=true&count_private=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&icon_color=7C3AED&ring_color=7C3AED"
+        alt="GitHub Stats"
+      />
     </td>
     <td>
-      <img src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12" alt="GitHub Streak"/>
+      <img
+        src="https://streak-stats.demolab.com?user=mudit-1711&theme=transparent&hide_border=true&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&border_radius=12"
+        alt="GitHub Streak"
+      />
     </td>
   </tr>
 </table>
 
-<br>
-
 </div>
 
-<!-- GitHub Profile Details & Language Stats -->
+<br>
+
+<!-- GitHub Profile Details -->
 <div align="center">
 
-  <img height="180em"
+  <img
+    height="180em"
     src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mudit-1711&theme=github_dark"
-    alt="GitHub Profile Details"/>
-
-  <img height="180em"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mudit-1711&theme=github_dark"
-    alt="Repositories Per Language"/>
-
-  <img height="180em"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=mudit-1711&theme=github_dark"
-    alt="Most Commit Language"/>
-
-  <img height="180em"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mudit-1711&theme=github_dark"
-    alt="GitHub Statistics"/>
+    alt="GitHub Profile Details"
+  />
 
 </div>
 
 <br>
 
-<!-- Contribution Graph -->
+<!-- Repository & Commit Statistics -->
+<div align="center">
+  <tr>
+    <td>
+      <img
+        height="180em"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mudit-1711&theme=github_dark"
+        alt="Repositories Per Language"
+      />
+    </td>
+    <td>
+      <img
+        height="180em"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=mudit-1711&theme=github_dark"
+        alt="Most Commit Language"
+      />
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center">
+      <img
+        height="180em"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mudit-1711&theme=github_dark"
+        alt="GitHub Statistics"
+      />
+    </td>
+  </tr>
+</div>
+
+<br>
+
+<!-- Contribution Heatmap -->
 <p align="center">
-  <img src="https://ghchart.rshah.org/18f85d/mudit-1711" alt="Mudit's Contribution Graph" />
+  <img
+    src="https://ghchart.rshah.org/18f85d/mudit-1711"
+    alt="Mudit's Contribution Heatmap"
+  />
 </p>
 
 <!-- Activity Graph -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mudit-1711&theme=react-dark&hide_border=true" alt="Mudit's GitHub Activity Graph" />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=mudit-1711&theme=react-dark&hide_border=true"
+    alt="Mudit's GitHub Activity Graph"
+  />
 </p>
 
 ---
