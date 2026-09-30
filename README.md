@@ -228,7 +228,7 @@
 <!-- Contribution Heatmap -->
 <p align="center">
   <img
-    src="https://ghchart.rshah.org/18f85d/mudit-1711"
+    src="https://ghchart.rshah.org/33ff33/mudit-1711"
     alt="Mudit's Contribution Heatmap"
   />
 </p>
