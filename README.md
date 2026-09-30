@@ -155,9 +155,8 @@
   </tr>  
 </table>
 
----
-
 ### 📊 GitHub Metrics
+
 <!-- GitHub Stats & Streak -->
 <div align="center">
 <table>
@@ -173,20 +172,42 @@
 
 <br>
 
-<!-- Languages Used -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mudit-1711&layout=compact&hide_progress=true&langs_count=10&theme=dark&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&cache_seconds=1800" alt="Languages Used" width="495px"/>
-</p>
+</div>
+
+<!-- GitHub Profile Details & Language Stats -->
+<div align="center">
+
+  <img height="180em"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mudit-1711&theme=github_dark"
+    alt="GitHub Profile Details"/>
+
+  <img height="180em"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mudit-1711&theme=github_dark"
+    alt="Repositories Per Language"/>
+
+  <img height="180em"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=mudit-1711&theme=github_dark"
+    alt="Most Commit Language"/>
+
+  <img height="180em"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mudit-1711&theme=github_dark"
+    alt="GitHub Statistics"/>
 
 </div>
+
+<br>
 
 <!-- Contribution Graph -->
 <p align="center">
   <img src="https://ghchart.rshah.org/18f85d/mudit-1711" alt="Mudit's Contribution Graph" />
 </p>
 
----
+<!-- Activity Graph -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mudit-1711&theme=react-dark&hide_border=true" alt="Mudit's GitHub Activity Graph" />
+</p>
 
+---
 ### 📬 Connect & Collaborate
 
 <p align="center">
