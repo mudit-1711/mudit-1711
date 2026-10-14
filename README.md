@@ -31,10 +31,10 @@
 ### 👨‍💻 About Me
 
 - 🎓 **Education**: Pursuing B.Tech in Information Technology at **Indian Institute of Information Technology (IIIT) Bhopal**.
-- 🚀 **Focus Areas**: Machine Learning,Deep Learning, Data Science, Data Structures & Algorithms, Competitive Programming.
-- 💡 **Core Strengths**: Analytical Problem Solving, Algorithmic Optimization, Exploratory Data Analysis, Predictive Modeling.
-- 🎯 **Current Goals**: Advanced Machine Learning Architectures, Competitive Programming Rankings, and Open-Source Contributions.
-- 💬 **Ask me about**: Python, C++, Machine Learning algorithms, Scikit-learn, and DSA strategies.
+- 🚀 **Focus Areas**: Machine Learning,Deep Learning,Generative A, Data Science, Data Structures & Algorithms, Competitive Programming.
+- 💡 **Core Strengths**: Machine Learning, Deep Learning, Generative AI, Data Science, Problem Solving, and Algorithmic Thinking.
+- 🎯 **Current Focus**: Building Diverse AI/ML Projects, Exploring LLMs and GenAI Applications, and Strengthening DSA & Competitive Programming Skills.
+- 💬 **Ask me about**: Python, C++, Machine Learning, Deep Learning, Generative AI, LLMs, and Data Structures & Algorithms.
 - 📫 **Reach me at**: `muditagrawal06@gmail.com`
 
 ---
@@ -59,6 +59,9 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Machine_Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
   <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
+  <img src="https://img.shields.io/badge/Generative_AI-8E44AD?style=for-the-badge&logo=openai&logoColor=white" alt="Generative AI" />
+  <img src="https://img.shields.io/badge/LLMs-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Large Language Models" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
   <img src="https://img.shields.io/badge/NLP-5C4EE5?style=for-the-badge&logo=google&logoColor=white" alt="NLP" />
   <img src="https://img.shields.io/badge/EDA-10B981?style=for-the-badge&logo=plotly&logoColor=white" alt="Exploratory Data Analysis" />
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
@@ -71,7 +74,6 @@
   <img src="https://img.shields.io/badge/Seaborn-4FC3F7?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
   <img src="https://img.shields.io/badge/Plotly-636EFA?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/Ydata_Profiling-6B4FBB?style=for-the-badge&logo=pandas&logoColor=white" alt="Ydata-profiling" />
 </p>
 
 #### ⚙️ Developer Tools & AI Technologies
@@ -90,6 +92,7 @@
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
   <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
   <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
 
   <img src="https://img.shields.io/badge/ChatGPT-412991?style=for-the-badge&logo=openai&logoColor=white" alt="ChatGPT" />
   <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini" />
