@@ -31,7 +31,7 @@
 ### 👨‍💻 About Me
 
 - 🎓 **Education**: Pursuing B.Tech in Information Technology at **Indian Institute of Information Technology (IIIT) Bhopal**.
-- 🚀 **Focus Areas**: Machine Learning,Deep Learning,Generative A, Data Science, Data Structures & Algorithms, Competitive Programming.
+- 🚀 **Focus Areas**: Machine Learning,Deep Learning,Generative AI, Data Science, Data Structures & Algorithms, Competitive Programming.
 - 💡 **Core Strengths**: Machine Learning, Deep Learning, Generative AI, Data Science, Problem Solving, and Algorithmic Thinking.
 - 🎯 **Current Focus**: Building Diverse AI/ML Projects, Exploring LLMs and GenAI Applications, and Strengthening DSA & Competitive Programming Skills.
 - 💬 **Ask me about**: Python, C++, Machine Learning, Deep Learning, Generative AI, LLMs, and Data Structures & Algorithms.
